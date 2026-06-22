@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -185,7 +185,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="10" y="50" font-size="40" fill="rgba(212,175,55,0.02)" font-family="serif">閬?/text></svg>') repeat;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="10" y="50" font-size="40" fill="rgba(212,175,55,0.02)" font-family="serif">道</text></svg>') repeat;
   background-size: 100px 100px;
   pointer-events: none;
 }
@@ -601,7 +601,7 @@ nav {
   letter-spacing: 0.5px;
 }
 .contact-info div::before {
-  content: '鈼?';
+  content: '◎ ';
   color: rgba(212, 175, 55, 0.5);
 }
 
@@ -1045,7 +1045,7 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
 <!-- ===== NAVIGATION ===== -->
 <nav>
   <div class="nav-brand">
-    <span class="logo">鍙?/span>
+    <span class="logo">古</span>
     <span class="name" data-i18n="brand">Ancient Remedies</span>
   </div>
   <div class="nav-links">
@@ -1056,14 +1056,14 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
   </div>
   <div class="nav-right">
     <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('zh')">涓?/button>
-    <button class="lang-btn" onclick="setLang('ja')">鏃?/button>
-    <button class="lang-btn" onclick="setLang('ko')">頃?/button>
+    <button class="lang-btn" onclick="setLang('zh')">中</button>
+    <button class="lang-btn" onclick="setLang('ja')">日</button>
+    <button class="lang-btn" onclick="setLang('ko')">한</button>
     <button class="lang-btn" onclick="setLang('de')">DE</button>
     <button class="lang-btn" onclick="setLang('fr')">FR</button>
-    <button class="lang-btn" onclick="setLang('ar')">毓</button>
+    <button class="lang-btn" onclick="setLang('ar')">ع</button>
     <button class="cart-btn" onclick="toggleCart()">
-      馃洅 <span data-i18n="cart_label">Cart</span>
+      🛒 <span data-i18n="cart_label">Cart</span>
       <span class="cart-badge" id="cartBadge">0</span>
     </button>
   </div>
@@ -1071,16 +1071,16 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
 
 <!-- ===== PROMO BANNER ===== -->
 <div class="promo-banner" id="promoBanner">
-  <span data-i18n="promo_text">馃敟 Limited Offer 路 50% Off All Volumes 路 Ends June 30, 2026</span>
-  <span class="close" onclick="closePromo()">鉁?/span>
+  <span data-i18n="promo_text">🔥 Limited Offer · 50% Off All Volumes · Ends June 30, 2026</span>
+  <span class="close" onclick="closePromo()">✕</span>
 </div>
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
-  <div class="ornament">鈼?鈼?鈼?/div>
+  <div class="ornament">◆ ◇ ◆</div>
   <h1 data-i18n="hero_title">Ancient Remedies</h1>
-  <div class="subtitle" data-i18n="hero_subtitle">Eastern Wellness Wisdom 路 Thousand-Year Heritage</div>
-  <p class="desc" data-i18n="hero_desc">Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature 鈥?your journey to holistic health begins here.</p>
+  <div class="subtitle" data-i18n="hero_subtitle">Eastern Wellness Wisdom · Thousand-Year Heritage</div>
+  <p class="desc" data-i18n="hero_desc">Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature — your journey to holistic health begins here.</p>
   <div class="hero-ctas">
     <a href="#products" class="btn-primary" data-i18n="hero_cta1">Explore Collection</a>
     <button class="btn-outline" onclick="openAI()" data-i18n="hero_cta2">Ask the Oracle</button>
@@ -1094,7 +1094,7 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
     <p data-i18n="products_desc">Five volumes of Eastern wellness wisdom, each a gateway to ancient healing traditions.</p>
     <div class="divider">
       <span></span>
-      <span class="diamond">鈼?/span>
+      <span class="diamond">◆</span>
       <span></span>
     </div>
   </div>
@@ -1108,13 +1108,13 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
     <p data-i18n="reviews_desc">Voices from around the world who have experienced the wisdom of ancient healing.</p>
     <div class="divider">
       <span></span>
-      <span class="diamond">鈼?/span>
+      <span class="diamond">◆</span>
       <span></span>
     </div>
   </div>
   <div class="stats-bar">
     <div class="stat-item">
-      <div class="num" data-i18n="stat_rating">猸?4.8/5.0</div>
+      <div class="num" data-i18n="stat_rating">⭐ 4.8/5.0</div>
       <div class="label" data-i18n="stat_reviewers">12,847 Global Reviews</div>
     </div>
     <div class="stat-item">
@@ -1123,7 +1123,7 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
     </div>
   </div>
   <div class="reviews-grid" id="reviewsGrid"></div>
-  <div class="more-reviews" data-i18n="review_more">More Reviews 鈻?/div>
+  <div class="more-reviews" data-i18n="review_more">More Reviews ▸</div>
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -1139,19 +1139,19 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="disclaimer" data-i18n="disclaimer">Disclaimer: These books are for educational and reference purposes only. They do not constitute medical advice. The information contained herein should not be used as a substitute for professional medical diagnosis or treatment. Please consult a qualified healthcare professional before beginning any health regimen or using any remedies described in these volumes.</div>
-  <div data-i18n="copyright">漏 2026 Ancient Remedies. All rights reserved.</div>
+  <div data-i18n="copyright">© 2026 Ancient Remedies. All rights reserved.</div>
 </footer>
 
 <!-- ===== CART MODAL ===== -->
 <div class="modal-overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()">
   <div class="cart-modal">
-    <span class="close-modal" onclick="closeCart()">鉁?/span>
-    <h2 data-i18n="cart_title">Scroll Bag 馃洅</h2>
+    <span class="close-modal" onclick="closeCart()">✕</span>
+    <h2 data-i18n="cart_title">Scroll Bag 🛒</h2>
     <div id="cartItems"></div>
     <div id="cartEmpty" class="cart-empty" data-i18n="cart_empty">Your bag is empty. Explore our collection to begin your wellness journey!</div>
     <div class="cart-footer" id="cartFooter" style="display:none">
       <div class="cart-total"><span data-i18n="cart_total">Total</span>: $<span id="cartTotalPrice">0.0</span></div>
-      <button class="checkout-btn" onclick="openPayment()" data-i18n="checkout">Checkout 鈾?/button>
+      <button class="checkout-btn" onclick="openPayment()" data-i18n="checkout">Checkout ♦</button>
     </div>
   </div>
 </div>
@@ -1172,11 +1172,11 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
 </div>
 
 <!-- ===== AI ASSISTANT ===== -->
-<button class="ai-fab" onclick="toggleAI()">馃К</button>
+<button class="ai-fab" onclick="toggleAI()">🧬</button>
 <div class="ai-panel" id="aiPanel">
   <div class="ai-head">
-    <h3>馃К <span data-i18n="ai_title">Wellness Oracle</span></h3>
-    <span class="close-ai" onclick="toggleAI()">鉁?/span>
+    <h3>🧬 <span data-i18n="ai_title">Wellness Oracle</span></h3>
+    <span class="close-ai" onclick="toggleAI()">✕</span>
   </div>
   <div class="ai-messages" id="aiMessages">
     <div class="ai-msg bot" data-i18n="ai_welcome">Hello! I am the Wellness Oracle. Describe your symptoms or health needs, and I will recommend the right volume from our collection to guide you on your healing journey.</div>
@@ -1191,31 +1191,31 @@ body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
 // ===================== PRODUCT DATA =====================
 var products = [
   {
-    id: 'pf', icon: '鏂?, tag: '鏂?, tagClass: 'tag-red',
+    id: 'pf', icon: '方', tag: '方', tagClass: 'tag-red',
     price: 9.9, oldPrice: 19.8, badge: 'sale_50',
     color: '#C8372D',
     keys: { name: 'pf_name', sub: 'pf_sub', desc: 'pf_desc', tag1: 'pf_tag1', tag2: 'pf_tag2', tag3: 'pf_tag3' }
   },
   {
-    id: 'll', icon: '鐞?, tag: '鐞?, tagClass: 'tag-purple',
+    id: 'll', icon: '理', tag: '理', tagClass: 'tag-purple',
     price: 13.9, oldPrice: 27.8, badge: 'sale_50',
     color: '#7B2D8E',
     keys: { name: 'll_name', sub: 'll_sub', desc: 'll_desc', tag1: 'll_tag1', tag2: 'll_tag2', tag3: 'll_tag3' }
   },
   {
-    id: 'ys', icon: '鍏?, tag: '鍏?, tagClass: 'tag-orange',
+    id: 'ys', icon: '养', tag: '养', tagClass: 'tag-orange',
     price: 16.9, oldPrice: 33.8, badge: 'sale_50',
     color: '#D4830A',
     keys: { name: 'ys_name', sub: 'ys_sub', desc: 'ys_desc', tag1: 'ys_tag1', tag2: 'ys_tag2', tag3: 'ys_tag3' }
   },
   {
-    id: 'hd', icon: '榛?, tag: '榛?, tagClass: 'tag-yellow',
+    id: 'hd', icon: '黄', tag: '黄', tagClass: 'tag-yellow',
     price: 29.8, oldPrice: 59.9, badge: 'sale_limited',
     color: '#B8960C',
     keys: { name: 'hd_name', sub: 'hd_sub', desc: 'hd_desc', tag1: 'hd_tag1', tag2: 'hd_tag2', tag3: 'hd_tag3' }
   },
   {
-    id: 'bc', icon: '鑽?, tag: '鑽?, tagClass: 'tag-green',
+    id: 'bc', icon: '草', tag: '草', tagClass: 'tag-green',
     price: 26.8, oldPrice: 53.9, badge: 'sale_limited',
     color: '#2D8E3E',
     keys: { name: 'bc_name', sub: 'bc_sub', desc: 'bc_desc', tag1: 'bc_tag1', tag2: 'bc_tag2', tag3: 'bc_tag3' }
@@ -1228,36 +1228,36 @@ en: {
   brand: 'Ancient Remedies',
   nav_home: 'Home', nav_products: 'Collection', nav_reviews: 'Testimonials', nav_about: 'About',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: 'Eastern Wellness Wisdom 路 Thousand-Year Heritage',
-  hero_desc: 'Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature 鈥?your journey to holistic health begins here.',
+  hero_subtitle: 'Eastern Wellness Wisdom · Thousand-Year Heritage',
+  hero_desc: 'Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature — your journey to holistic health begins here.',
   hero_cta1: 'Explore Collection', hero_cta2: 'Ask the Oracle',
   products_title: 'The Collection',
   products_desc: 'Five volumes of Eastern wellness wisdom, each a gateway to ancient healing traditions.',
-  pf_name: 'Folk Remedies Compendium', pf_sub: '鍋忔柟澶у叏',
+  pf_name: 'Folk Remedies Compendium', pf_sub: '偏方大全',
   pf_desc: '59 time-tested formulas across 8 body systems, each with original source citations and modern usage notes. A treasure trove of grandmother\'s wisdom.',
   pf_tag1: '59 Formulas', pf_tag2: '8 Systems', pf_tag3: 'With Sources',
-  ll_name: 'Home Therapy Guide', ll_sub: '鐞嗙檪鎸囧崡',
+  ll_name: 'Home Therapy Guide', ll_sub: '理療指南',
   ll_desc: '52 therapeutic movements, 35 key acupoint maps, covering 6 major body areas with step-by-step illustrations and self-care techniques.',
   ll_tag1: '52 Movements', ll_tag2: '35 Acupoints', ll_tag3: '6 Areas',
-  ys_name: 'Wellness Manual', ys_sub: '椁婄敓鎵嬪唺',
+  ys_name: 'Wellness Manual', ys_sub: '養生手冊',
   ys_desc: '108 seasonal recipes across 9 constitution types, with personalized wellness plans for every season. Eat your way to vitality.',
   ys_tag1: '108 Recipes', ys_tag2: '9 Types', ys_tag3: 'Seasonal Plans',
-  hd_name: 'Huangdi Neijing 路 Seasonal Wellness', hd_sub: '榛冨笣鍏х稉',
-  hd_desc: '24 solar term wellness guide based on Five Elements theory and the Meridian Clock 鈥?the crown jewel of traditional Chinese medicine wisdom.',
+  hd_name: 'Huangdi Neijing · Seasonal Wellness', hd_sub: '黃帝內經',
+  hd_desc: '24 solar term wellness guide based on Five Elements theory and the Meridian Clock — the crown jewel of traditional Chinese medicine wisdom.',
   hd_tag1: '24 Solar Terms', hd_tag2: 'Five Elements', hd_tag3: 'Meridian Clock',
-  bc_name: 'Bencao Gangmu 路 Dietary Therapy', bc_sub: '鏈崏缍辩洰',
+  bc_name: 'Bencao Gangmu · Dietary Therapy', bc_sub: '本草綱目',
   bc_desc: '365 medicinal ingredients, 200+ therapeutic recipes, matched to your constitution type for personalized dietary healing and nourishment.',
   bc_tag1: '365 Ingredients', bc_tag2: '200+ Recipes', bc_tag3: 'Constitution Match',
   badge_hot: 'HOT', badge_rec: 'RECOMMENDED', badge_treasure: 'TREASURE', badge_classic: 'CLASSIC', badge_herbal: 'HERBAL',
   sale_50: '50% OFF', sale_limited: 'LIMITED', sale_days_left: 'Ends Soon',
-  add_cart: 'Add to Cart', cart_label: 'Cart', cart_title: 'Scroll Bag 馃洅',
+  add_cart: 'Add to Cart', cart_label: 'Cart', cart_title: 'Scroll Bag 🛒',
   cart_empty: 'Your bag is empty. Explore our collection to begin your wellness journey!',
-  cart_total: 'Total', checkout: 'Checkout 鈾?,
+  cart_total: 'Total', checkout: 'Checkout ♦',
   reviews_title: 'Testimonials',
   reviews_desc: 'Voices from around the world who have experienced the wisdom of ancient healing.',
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12,847 Global Reviews', stat_recommend: 'Recommend',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 Global Reviews', stat_recommend: 'Recommend',
   rv1_name: 'Li Mingyuan', rv1_loc: 'USA',
-  rv1_text: '"Ginger-Sugar-Onion soup cured my cold in 2 days. My grandmother would be so proud 鈥?her remedies really work!"',
+  rv1_text: '"Ginger-Sugar-Onion soup cured my cold in 2 days. My grandmother would be so proud — her remedies really work!"',
   rv1_purchased: 'Compendium',
   rv2_name: 'Wang Fang', rv2_loc: 'Canada',
   rv2_text: '"The acupoint charts in the Therapy Guide are incredibly practical! I use them every morning as part of my daily routine."',
@@ -1268,12 +1268,12 @@ en: {
   rv4_name: 'Wei Zhang', rv4_loc: 'Australia',
   rv4_text: '"Bought all five volumes. My overall health has noticeably improved in just 3 months of following the practices!"',
   rv4_purchased: 'Complete Set',
-  review_more: 'More Reviews 鈻?,
-  promo_text: '馃敟 Limited Offer 路 50% Off All Volumes 路 Ends June 30, 2026',
+  review_more: 'More Reviews ▸',
+  promo_text: '🔥 Limited Offer · 50% Off All Volumes · Ends June 30, 2026',
   about_title: 'About Ancient Remedies',
   about_text: 'Ancient Remedies is dedicated to preserving and sharing the profound wellness wisdom of Eastern civilization. Our volumes distill thousands of years of traditional Chinese medicine, seasonal wellness practices, and herbal knowledge into accessible, beautifully crafted references for the modern seeker of holistic health. Each book is a bridge between ancient tradition and contemporary wellness, meticulously researched and elegantly presented.',
   disclaimer: 'Disclaimer: These books are for educational and reference purposes only. They do not constitute medical advice. The information contained herein should not be used as a substitute for professional medical diagnosis or treatment. Please consult a qualified healthcare professional before beginning any health regimen or using any remedies described in these volumes.',
-  copyright: '漏 2026 Ancient Remedies. All rights reserved.',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
   pay_title: 'Scan to Pay', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
   pay_tip: '1. Open WeChat or Alipay on your phone<br>2. Scan the QR code displayed above<br>3. Enter the payment amount shown<br>4. Confirm and complete your payment',
   pay_back: 'Continue Shopping',
@@ -1281,361 +1281,361 @@ en: {
   ai_welcome: 'Hello! I am the Wellness Oracle. Describe your symptoms or health needs, and I will recommend the right volume from our collection to guide you on your healing journey.',
   ai_placeholder: 'Describe your symptoms or health needs...',
   remove: 'Remove',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 zh: {
-  brand: '鍙ゆ柟鍏荤敓',
-  nav_home: '棣栭〉', nav_products: '鍏歌棌', nav_reviews: '璇勪环', nav_about: '鍏充簬',
-  hero_title: '鍙ゆ柟鍏荤敓',
-  hero_subtitle: '涓滄柟鍏荤敓鏅烘収 路 鍗冨勾浼犳壙',
-  hero_desc: '鎺㈢储浼犳壙鍗冨勾鐨勫吇鐢熺鏂广€備粠鍙ょ睄璁拌浇鐨勬皯闂村亸鏂瑰埌椤哄簲鑷劧鑺傚緥鐨勫洓瀛ｅ吇鐢熲€斺€斾綘鐨勫叏鎭仴搴蜂箣鏃呬粠姝ゅ紑濮嬨€傛瘡涓€閮ㄥ吀绫嶉兘鏄繛鎺ュ彜浠婃櫤鎱х殑妗ユ銆?,
-  hero_cta1: '娴忚鍏歌棌', hero_cta2: '闂瘖绁炶皶',
-  products_title: '鍏歌棌绯诲垪',
-  products_desc: '浜旈儴涓滄柟鍏荤敓鏅烘収鍏哥睄锛屾瘡涓€閮ㄩ兘鏄€氬線鍙や唬鐤楁剤浼犵粺鐨勫ぇ闂ㄣ€?,
-  pf_name: '姘戦棿鍋忔柟澶у叏', pf_sub: 'Folk Remedies',
-  pf_desc: '鏀跺綍59涓粡杩囧瞾鏈堥獙璇佺殑鍋忔柟锛岃鐩?澶ц韩浣撶郴缁燂紝闄勫師濮嬪嚭澶勫紩鐢ㄥ拰鐜颁唬鐢ㄦ硶璇﹁В銆備竴鏈€煎緱鐝嶈棌鐨勭姣嶆櫤鎱у疂搴撱€?,
-  pf_tag1: '59鏂瑰墏', pf_tag2: '8绯荤粺', pf_tag3: '闄勫嚭澶?,
-  ll_name: '瀹跺涵鐞嗙枟鎸囧崡', ll_sub: 'Home Therapy',
-  ll_desc: '52涓悊鐤楀姩浣滐紝35涓叧閿┐浣嶅浘瑙ｏ紝瑕嗙洊6澶ц韩浣撻儴浣嶏紝闄勫垎姝ュ浘绀哄拰鑷垜淇濆仴鎶€宸э紝绠€鍗曟槗瀛︺€?,
-  ll_tag1: '52鍔ㄤ綔', ll_tag2: '35绌翠綅', ll_tag3: '6閮ㄤ綅',
-  ys_name: '鍥涘鍏荤敓鎵嬪唽', ys_sub: 'Wellness Manual',
-  ys_desc: '108閬撳鑺傞鏂癸紝瑕嗙洊9绉嶄綋璐ㄧ被鍨嬶紝涓烘瘡涓鑺傛彁渚涗釜鎬у寲鍏荤敓鏂规銆傚悆鍑哄仴搴凤紝鍏诲嚭娲诲姏銆?,
-  ys_tag1: '108椋熻氨', ys_tag2: '9浣撹川', ys_tag3: '鍥涘鏂规',
-  hd_name: '榛勫笣鍐呯粡路鑺傛皵鍏荤敓', hd_sub: 'Huangdi Neijing',
-  hd_desc: '鍩轰簬浜旇鐞嗚鍜岀粡缁滄椂閽熺殑24鑺傛皵鍏荤敓鎸囧崡鈥斺€斾腑鍖绘櫤鎱х殑鐨囧啝鏄庣彔锛岄『搴斿ぉ鏃惰皟鍏昏韩蹇冦€?,
-  hd_tag1: '24鑺傛皵', hd_tag2: '浜旇', hd_tag3: '缁忕粶鏃堕挓',
-  bc_name: '鏈崏绾茬洰路椋熺枟鍏荤敓', bc_sub: 'Bencao Gangmu',
-  bc_desc: '365绉嶈嵂鐢ㄩ鏉愶紝200+椋熺枟閰嶆柟锛岀簿鍑嗗尮閰嶄綘鐨勪綋璐ㄧ被鍨嬭繘琛屼釜鎬у寲椋熺枟璋冪悊鍜屾粙琛ュ吇鐢熴€?,
-  bc_tag1: '365鍛宠嵂鏉?, bc_tag2: '200+閰嶆柟', bc_tag3: '浣撹川鍖归厤',
-  badge_hot: '鐑攢', badge_rec: '鎺ㄨ崘', badge_treasure: '鐝嶅搧', badge_classic: '缁忓吀', badge_herbal: '鏈崏',
-  sale_50: '5鎶樹紭鎯?, sale_limited: '闄愰噺鍙戝敭', sale_days_left: '鍗冲皢鎴',
-  add_cart: '鍔犲叆涔﹁', cart_label: '璐墿杞?, cart_title: '涔﹁ 馃洅',
-  cart_empty: '浣犵殑涔﹁鏄┖鐨勶紝蹇幓娴忚鍏歌棌寮€鍚綘鐨勫吇鐢熶箣鏃呭惂锛?,
-  cart_total: '鍚堣', checkout: '缁撶畻 鈾?,
-  reviews_title: '璇昏€呰瘎浠?,
-  reviews_desc: '鏉ヨ嚜涓栫晫鍚勫湴璇昏€呯殑鐪熷疄鍙嶉涓庡ソ璇勩€?,
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12,847鏉″叏鐞冭瘎浠?, stat_recommend: '鎺ㄨ崘鐜?,
-  rv1_name: '鏉庢槑杩?, rv1_loc: '缇庡浗',
-  rv1_text: '"濮滅硸钁辨堡涓ゅぉ灏辨不濂戒簡鎴戠殑鎰熷啋銆傚ザ濂朵竴瀹氫細寰堥獎鍌测€斺€斿ス鐨勬柟瀛愮湡鐨勭鐢紒"',
-  rv1_purchased: '鍋忔柟澶у叏',
-  rv2_name: '鐜嬭姵', rv2_loc: '鍔犳嬁澶?,
-  rv2_text: '"鐞嗙枟鎸囧崡閲岀殑绌翠綅鍥捐В澶疄鐢ㄤ簡锛佹垜鐜板湪姣忓ぉ鏃╀笂閮戒細鎸夌収鍥剧ず鍋氫竴濂?routines銆?',
-  rv2_purchased: '鐞嗙枟鎸囧崡',
-  rv3_name: '闄堝ぇ鍗?, rv3_loc: '鑻卞浗',
-  rv3_text: '"浣撹川娴嬭瘯鏄剧ず鎴戞槸姘旇櫄浣撹川銆傛寜鐓у吇鐢熸墜鍐岀殑鑽夎嵂椋熻氨璋冪悊浜?涓湀锛岀簿鍔涘畬鍏ㄤ笉鍚屼簡銆?',
-  rv3_purchased: '鍏荤敓鎵嬪唽',
-  rv4_name: '寮犱紵', rv4_loc: '婢冲ぇ鍒╀簹',
-  rv4_text: '"浜旀湰鍏ㄤ拱浜嗐€傚潥鎸佷簡3涓湀鐨勫吇鐢熷疄璺碉紝鏁翠綋鍋ュ悍鐘跺喌鏄庢樉鏀瑰杽锛?',
-  rv4_purchased: '鍏ㄥ鍏歌棌',
-  review_more: '鏇村璇勪环 鈻?,
-  promo_text: '馃敟 闄愭椂浼樻儬 路 鍏ㄥ満浜旀姌 路 2026骞?鏈?0鏃ユ埅姝?,
-  about_title: '鍏充簬鍙ゆ柟鍏荤敓',
-  about_text: '鍙ゆ柟鍏荤敓鑷村姏浜庝繚鎶ゅ拰浼犳壙涓滄柟鏂囨槑鐨勬繁閭冨吇鐢熸櫤鎱с€傛垜浠殑鍏哥睄灏嗘暟鍗冨勾鐨勪腑鍖汇€佸洓瀛ｅ吇鐢熷拰鑽夎嵂鐭ヨ瘑鎻愮偧涓烘槗浜庤幏鍙栥€佺簿缇庡埗浣滅殑鐜颁唬鍙傝€冭鐗┿€傛瘡涓€鏈功閮芥槸杩炴帴鍙や粖鐨勬ˉ姊侊紝缁忚繃绮惧績鐮旂┒鍜屼紭闆呭憟鐜般€?,
-  disclaimer: '鍏嶈矗澹版槑锛氭湰涔︿粎渚涙暀鑲插拰鍙傝€冪敤閫旓紝涓嶆瀯鎴愬尰鐤楀缓璁€備功涓墍鍚俊鎭笉搴旀浛浠ｄ笓涓氬尰鐤楄瘖鏂垨娌荤枟銆傚湪寮€濮嬩换浣曞吇鐢熸柟妗堟垨浣跨敤涔︿腑鎵€杩颁换浣曟柟鍓備箣鍓嶏紝璇峰挩璇㈠悎鏍肩殑鍖荤枟涓撲笟浜哄＋銆?,
-  copyright: '漏 2026 鍙ゆ柟鍏荤敓 鐗堟潈鎵€鏈?,
-  pay_title: '鎵爜鏀粯', pay_wechat: '寰俊鏀粯', pay_alipay: '鏀粯瀹?,
-  pay_tip: '1. 鎵撳紑鎵嬫満涓婄殑寰俊鎴栨敮浠樺疂<br>2. 鎵弿涓婃柟鏄剧ず鐨勪簩缁寸爜<br>3. 杈撳叆鏄剧ず鐨勬敮浠橀噾棰?br>4. 纭骞跺畬鎴愭敮浠?,
-  pay_back: '缁х画璐墿',
-  ai_title: '鍏荤敓绁炶皶', ai_send: '鍙戦€?,
-  ai_welcome: '浣犲ソ锛佹垜鏄吇鐢熺璋曘€傝鎻忚堪浣犵殑鐥囩姸鎴栧仴搴烽渶姹傦紝鎴戜細涓轰綘鎺ㄨ崘鏈€鍚堥€傜殑鍏哥睄锛屾寚寮曚綘鐨勭枟鎰堜箣鏃呫€?,
-  ai_placeholder: '鎻忚堪浣犵殑鐥囩姸鎴栧仴搴烽渶姹?..',
-  remove: '绉婚櫎',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  brand: '古方养生',
+  nav_home: '首页', nav_products: '典藏', nav_reviews: '评价', nav_about: '关于',
+  hero_title: '古方养生',
+  hero_subtitle: '东方养生智慧 · 千年传承',
+  hero_desc: '探索传承千年的养生秘方。从古籍记载的民间偏方到顺应自然节律的四季养生——你的全息健康之旅从此开始。每一部典籍都是连接古今智慧的桥梁。',
+  hero_cta1: '浏览典藏', hero_cta2: '问诊神谕',
+  products_title: '典藏系列',
+  products_desc: '五部东方养生智慧典籍，每一部都是通往古代疗愈传统的大门。',
+  pf_name: '民间偏方大全', pf_sub: 'Folk Remedies',
+  pf_desc: '收录59个经过岁月验证的偏方，覆盖8大身体系统，附原始出处引用和现代用法详解。一本值得珍藏的祖母智慧宝库。',
+  pf_tag1: '59方剂', pf_tag2: '8系统', pf_tag3: '附出处',
+  ll_name: '家庭理疗指南', ll_sub: 'Home Therapy',
+  ll_desc: '52个理疗动作，35个关键穴位图解，覆盖6大身体部位，附分步图示和自我保健技巧，简单易学。',
+  ll_tag1: '52动作', ll_tag2: '35穴位', ll_tag3: '6部位',
+  ys_name: '四季养生手册', ys_sub: 'Wellness Manual',
+  ys_desc: '108道季节食方，覆盖9种体质类型，为每个季节提供个性化养生方案。吃出健康，养出活力。',
+  ys_tag1: '108食谱', ys_tag2: '9体质', ys_tag3: '四季方案',
+  hd_name: '黄帝内经·节气养生', hd_sub: 'Huangdi Neijing',
+  hd_desc: '基于五行理论和经络时钟的24节气养生指南——中医智慧的皇冠明珠，顺应天时调养身心。',
+  hd_tag1: '24节气', hd_tag2: '五行', hd_tag3: '经络时钟',
+  bc_name: '本草纲目·食疗养生', bc_sub: 'Bencao Gangmu',
+  bc_desc: '365种药用食材，200+食疗配方，精准匹配你的体质类型进行个性化食疗调理和滋补养生。',
+  bc_tag1: '365味药材', bc_tag2: '200+配方', bc_tag3: '体质匹配',
+  badge_hot: '热销', badge_rec: '推荐', badge_treasure: '珍品', badge_classic: '经典', badge_herbal: '本草',
+  sale_50: '5折优惠', sale_limited: '限量发售', sale_days_left: '即将截止',
+  add_cart: '加入书袋', cart_label: '购物车', cart_title: '书袋 🛒',
+  cart_empty: '你的书袋是空的，快去浏览典藏开启你的养生之旅吧！',
+  cart_total: '合计', checkout: '结算 ♦',
+  reviews_title: '读者评价',
+  reviews_desc: '来自世界各地读者的真实反馈与好评。',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847条全球评价', stat_recommend: '推荐率',
+  rv1_name: '李明远', rv1_loc: '美国',
+  rv1_text: '"姜糖葱汤两天就治好了我的感冒。奶奶一定会很骄傲——她的方子真的管用！"',
+  rv1_purchased: '偏方大全',
+  rv2_name: '王芳', rv2_loc: '加拿大',
+  rv2_text: '"理疗指南里的穴位图解太实用了！我现在每天早上都会按照图示做一套 routines。"',
+  rv2_purchased: '理疗指南',
+  rv3_name: '陈大卫', rv3_loc: '英国',
+  rv3_text: '"体质测试显示我是气虚体质。按照养生手册的草药食谱调理了3个月，精力完全不同了。"',
+  rv3_purchased: '养生手册',
+  rv4_name: '张伟', rv4_loc: '澳大利亚',
+  rv4_text: '"五本全买了。坚持了3个月的养生实践，整体健康状况明显改善！"',
+  rv4_purchased: '全套典藏',
+  review_more: '更多评价 ▸',
+  promo_text: '🔥 限时优惠 · 全场五折 · 2026年6月30日截止',
+  about_title: '关于古方养生',
+  about_text: '古方养生致力于保护和传承东方文明的深邃养生智慧。我们的典籍将数千年的中医、四季养生和草药知识提炼为易于获取、精美制作的现代参考读物。每一本书都是连接古今的桥梁，经过精心研究和优雅呈现。',
+  disclaimer: '免责声明：本书仅供教育和参考用途，不构成医疗建议。书中所含信息不应替代专业医疗诊断或治疗。在开始任何养生方案或使用书中所述任何方剂之前，请咨询合格的医疗专业人士。',
+  copyright: '© 2026 古方养生 版权所有',
+  pay_title: '扫码支付', pay_wechat: '微信支付', pay_alipay: '支付宝',
+  pay_tip: '1. 打开手机上的微信或支付宝<br>2. 扫描上方显示的二维码<br>3. 输入显示的支付金额<br>4. 确认并完成支付',
+  pay_back: '继续购物',
+  ai_title: '养生神谕', ai_send: '发送',
+  ai_welcome: '你好！我是养生神谕。请描述你的症状或健康需求，我会为你推荐最合适的典籍，指引你的疗愈之旅。',
+  ai_placeholder: '描述你的症状或健康需求...',
+  remove: '移除',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 ja: {
-  brand: '鍙ゆ柟椁婄敓鍫?,
-  nav_home: '銉涖兗銉?, nav_products: '銈炽儸銈偡銉с兂', nav_reviews: '銉儞銉ャ兗', nav_about: '姒傝',
+  brand: '古方養生堂',
+  nav_home: 'ホーム', nav_products: 'コレクション', nav_reviews: 'レビュー', nav_about: '概要',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: '鏉辨磱椁婄敓銇煡鎭?路 鍗冨勾銇伜鐢?,
-  hero_desc: '浣曞崈骞淬倐鍙椼亼缍欍亴銈屻仸銇嶃仧鐧掋仐銇瀵嗐倰鐧鸿銇椼伨銇椼倗銇嗐€傚彜浠ｃ伄鏂囩尞銇銇曘倢銇熸皯闁撶檪娉曘亱銈夈€佽嚜鐒躲伄銉偤銉犮伀鍚堛倧銇涖仧瀛ｇ瘈銇鐢熸硶銇俱仹銆傘亗銇仧銇儧銉偣銉嗐偅銉冦偗鍋ュ悍銇搞伄鏃呫伅銇撱亾銇嬨倝濮嬨伨銈娿伨銇欍€?,
-  hero_cta1: '銈炽儸銈偡銉с兂銈掕銈?, hero_cta2: '绁炶銇仦銇?,
-  products_title: '銈炽儸銈偡銉с兂',
-  products_desc: '5鍐娿伄鏉辨磱椁婄敓銇煡鎭点伄鏇搞€傘仢銈屻仦銈屻亴鍙や唬銇檼銇椼伄浼濈当銇搞伄鍏ャ倞鍙ｃ仹銇欍€?,
-  pf_name: '姘戦枔鐧傛硶澶у叏', pf_sub: '鍋忔柟澶у叏',
-  pf_desc: '8銇ゃ伄韬綋绯荤当銇倧銇熴倠59銇瑷兼笀銇垮嚘鏂广€傚嚭鍏搞仺鐝句唬銇敤娉曘倰瑷樿級銇椼仧銆併亰銇般亗銇°們銈撱伄鐭ユ伒銇疂搴€?,
-  pf_tag1: '59鍑︽柟', pf_tag2: '8绯荤当', pf_tag3: '鍑哄吀浠樸亶',
-  ll_name: '瀹跺涵鐧傛硶銈偆銉?, ll_sub: '鐞嗙檪鎸囧崡',
-  ll_desc: '52銇不鐧傚嫊浣溿€?5銇祵绌淬優銉冦儣銆?銇ゃ伄涓昏韬綋閮ㄤ綅銈掔恫缇呫€傘偣銉嗐儍銉椼儛銈ゃ偣銉嗐儍銉椼伄鍥宠В浠樸亶銆?,
-  ll_tag1: '52鍕曚綔', ll_tag2: '35绲岀┐', ll_tag3: '6閮ㄤ綅',
-  ys_name: '椁婄敓銉炪儖銉ャ偄銉?, ys_sub: '椁婄敓鎵嬪唽',
-  ys_desc: '9銇ゃ伄浣撹唱銈裤偆銉楀垾108銇绡€銉偡銉斻€傚悇瀛ｇ瘈銇儜銉笺偨銉娿儵銈ゃ偤銇曘倢銇熼鐢熻▓鐢汇仹椋熴亱銈夊仴搴枫倰銆?,
-  ys_tag1: '108銉偡銉?, ys_tag2: '9銈裤偆銉?, ys_tag3: '瀛ｇ瘈瑷堢敾',
-  hd_name: '榛勫笣鍐呯祵銉诲绡€椁婄敓', hd_sub: '榛勫笣鍐呯粡',
-  hd_desc: '浜旇鐞嗚珫銇ㄧ祵绲℃檪瑷堛伀鍩恒仴銇?4绡€姘楅鐢熴偓銈ゃ儔鈥斺€斾腑鍖诲銇嚦瀹濄€傝嚜鐒躲伄銉偤銉犮伀鍚堛倧銇涖仧鍋ュ悍娉曘€?,
-  hd_tag1: '24绡€姘?, hd_tag2: '浜旇', hd_tag3: '绲岀怠鏅傝▓',
-  bc_name: '鏈崏缍辩洰銉婚鐧傞鐢?, bc_sub: '鏈崏绾茬洰',
-  bc_desc: '365绋伄鐢熻柆鏉愭枡銆?00浠ヤ笂銇鐧傘儸銈枫償銆備綋璩伀鍚堛倧銇涖仧銉戙兗銈姐儕銉┿偆銈恒仌銈屻仧椋熶簨鐧傛硶銆?,
-  bc_tag1: '365鏉愭枡', bc_tag2: '200+銉偡銉?, bc_tag3: '浣撹唱銉炪儍銉?,
-  badge_hot: '浜烘皸', badge_rec: '銇娿仚銇欍倎', badge_treasure: '鑷冲疂', badge_classic: '鍙ゅ吀', badge_herbal: '鏈崏',
-  sale_50: '50%OFF', sale_limited: '闄愬畾鐗?, sale_days_left: '闁撱倐銇亸绲備簡',
-  add_cart: '銈兗銉堛伀杩藉姞', cart_label: '銈兗銉?, cart_title: '銈兗銉?馃洅',
-  cart_empty: '銈兗銉堛伅绌恒仹銇欍€傘偝銉偗銈枫儳銉炽倰瑕嬨仸椁婄敓銇梾銈掑銈併伨銇椼倗銇嗭紒',
-  cart_total: '鍚堣▓', checkout: '銇婃敮鎵曘亜 鈾?,
-  reviews_title: '銉儞銉ャ兗',
-  reviews_desc: '涓栫晫涓伄浣撻〒鑰呫伄澹般€傚彜浠ｃ伄鐧掋仐銇煡鎭点倰浣撻〒銇椼仧鏂广€呫伄鎰熸兂銆?,
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12,847浠躲伄銈般儹銉笺儛銉儸銉撱儱銉?, stat_recommend: '銇娿仚銇欍倎鐜?,
-  rv1_name: 'Li Mingyuan', rv1_loc: '銈儭銉偒',
-  rv1_text: '"鐢熷鐮傜硸銉嶃偖銈广兗銉椼仹2鏃ャ仹棰ㄩ偑銇屾不銈娿伨銇椼仧銆傘亰銇般亗銇°們銈撱亴瑾囥倞銇€濄亞銇仛鈥斺€斿郊濂炽伄鐤楁硶銇湰褰撱伀鍔广亶銇俱仚锛?',
-  rv1_purchased: '澶у叏',
-  rv2_name: 'Wang Fang', rv2_loc: '銈儕銉€',
-  rv2_text: '"鐧傛硶銈偆銉夈伄绲岀┐鍥炽亴銇ㄣ仸銈傚疅鐢ㄧ殑銇с仚锛佹瘞鏈濄伄銉兗銉嗐偅銉炽伀鍙栥倞鍏ャ倢銇︺亜銇俱仚銆?',
-  rv2_purchased: '銈偆銉?,
-  rv3_name: 'David Chen', rv3_loc: '銈ゃ偖銉偣',
-  rv3_text: '"浣撹唱銉嗐偣銉堛仹姘楄櫄銇ㄥ垽鏄庛€?銉舵湀闁撹柆鑽夈儸銈枫償銇緭銇ｃ仧銈夈偍銉嶃儷銈兗銉儥銉亴瀹屽叏銇銈忋倞銇俱仐銇熴€?',
-  rv3_purchased: '銉炪儖銉ャ偄銉?,
-  rv4_name: 'Wei Zhang', rv4_loc: '銈兗銈广儓銉┿儶銈?,
-  rv4_text: '"5鍐婂叏閮ㄨ臣鍏ャ€?銉舵湀銇у叏浣撶殑銇仴搴枫亴鏄庛倝銇嬨伀鏀瑰杽銇椼伨銇椼仧锛?',
-  rv4_purchased: '鍏ㄣ偦銉冦儓',
-  review_more: '銉儞銉ャ兗銈掋倐銇ｃ仺瑕嬨倠 鈻?,
-  promo_text: '馃敟 闄愬畾銈儠銈°兗 路 鍏ㄥ坊50%OFF 路 2026骞?鏈?0鏃ャ伨銇?,
-  about_title: 'Ancient Remedies銇仱銇勩仸',
-  about_text: 'Ancient Remedies銇澅娲嬫枃鏄庛伄娣便亜椁婄敓銇煡鎭点倰淇濊銇楀叡鏈夈仚銈嬨亾銇ㄣ伀灏傚康銇椼仸銇勩伨銇欍€傚悇宸汇伅鍙や唬銇紳绲便仺鐝句唬銇偊銈с儷銉嶃偣銈掔祼銇舵灦銇戞銇с仚銆?,
-  disclaimer: '鍏嶈铂浜嬮爡锛氭湰鏇搞伅鏁欒偛銇娿倛銇冲弬鑰冪洰鐨勩伄銇裤仹銇欍€傚尰鐧傘伄銈儔銉愩偆銈广倰妲嬫垚銇欍倠銈傘伄銇с伅銇傘倞銇俱仜銈撱€傚仴搴疯▓鐢汇倰闁嬪銇欍倠鍓嶃伀銆佸皞闁€銇尰鐧傚緭浜嬭€呫伀銇旂浉璜囥亸銇犮仌銇勩€?,
-  copyright: '漏 2026 Ancient Remedies. All rights reserved.',
-  pay_title: '銈广偔銉ｃ兂銇椼仸鏀墪銇?, pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
-  pay_tip: '1. 銈广優銉涖仹WeChat銇俱仧銇疉lipay銈掗枊銇?br>2. 涓婅銇甉R銈炽兗銉夈倰銈广偔銉ｃ兂<br>3. 琛ㄧず銇曘倢銇熼噾椤嶃倰鍏ュ姏<br>4. 纰鸿獚銇椼仸鏀墪銇勩倰瀹屼簡',
-  pay_back: '璨枫亜鐗┿倰缍氥亼銈?,
-  ai_title: '椁婄敓銈儵銈儷', ai_send: '閫佷俊',
-  ai_welcome: '銇撱倱銇仭銇紒绉併伅椁婄敓銈儵銈儷銇с仚銆傜棁鐘躲倓鍋ュ悍銇儖銉笺偤銈掓暀銇堛仸銇忋仩銇曘亜銆傛渶閬┿仾涓€鍐娿倰銇婂嫥銈併仐銇俱仚銆?,
-  ai_placeholder: '鐥囩姸銈勫仴搴枫伄銉嬨兗銈恒倰鍏ュ姏...',
-  remove: '鍓婇櫎',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  hero_subtitle: '東洋養生の知恵 · 千年の遺産',
+  hero_desc: '何千年も受け継がれてきた癒しの秘密を発見しましょう。古代の文献に記された民間療法から、自然のリズムに合わせた季節の養生法まで。あなたのホリスティック健康への旅はここから始まります。',
+  hero_cta1: 'コレクションを見る', hero_cta2: '神託に聞く',
+  products_title: 'コレクション',
+  products_desc: '5冊の東洋養生の知恵の書。それぞれが古代の癒しの伝統への入り口です。',
+  pf_name: '民間療法大全', pf_sub: '偏方大全',
+  pf_desc: '8つの身体系統にわたる59の検証済み処方。出典と現代の用法を記載した、おばあちゃんの知恵の宝庫。',
+  pf_tag1: '59処方', pf_tag2: '8系統', pf_tag3: '出典付き',
+  ll_name: '家庭療法ガイド', ll_sub: '理療指南',
+  ll_desc: '52の治療動作、35の経穴マップ、6つの主要身体部位を網羅。ステップバイステップの図解付き。',
+  ll_tag1: '52動作', ll_tag2: '35経穴', ll_tag3: '6部位',
+  ys_name: '養生マニュアル', ys_sub: '養生手册',
+  ys_desc: '9つの体質タイプ別108の季節レシピ。各季節のパーソナライズされた養生計画で食から健康を。',
+  ys_tag1: '108レシピ', ys_tag2: '9タイプ', ys_tag3: '季節計画',
+  hd_name: '黄帝内経・季節養生', hd_sub: '黄帝内经',
+  hd_desc: '五行理論と経絡時計に基づく24節気養生ガイド——中医学の至宝。自然のリズムに合わせた健康法。',
+  hd_tag1: '24節気', hd_tag2: '五行', hd_tag3: '経絡時計',
+  bc_name: '本草綱目・食療養生', bc_sub: '本草纲目',
+  bc_desc: '365種の生薬材料、200以上の食療レシピ。体質に合わせたパーソナライズされた食事療法。',
+  bc_tag1: '365材料', bc_tag2: '200+レシピ', bc_tag3: '体質マッチ',
+  badge_hot: '人気', badge_rec: 'おすすめ', badge_treasure: '至宝', badge_classic: '古典', badge_herbal: '本草',
+  sale_50: '50%OFF', sale_limited: '限定版', sale_days_left: '間もなく終了',
+  add_cart: 'カートに追加', cart_label: 'カート', cart_title: 'カート 🛒',
+  cart_empty: 'カートは空です。コレクションを見て養生の旅を始めましょう！',
+  cart_total: '合計', checkout: 'お支払い ♦',
+  reviews_title: 'レビュー',
+  reviews_desc: '世界中の体験者の声。古代の癒しの知恵を体験した方々の感想。',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847件のグローバルレビュー', stat_recommend: 'おすすめ率',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'アメリカ',
+  rv1_text: '"生姜砂糖ネギスープで2日で風邪が治りました。おばあちゃんが誇りに思うはず——彼女の疗法は本当に効きます！"',
+  rv1_purchased: '大全',
+  rv2_name: 'Wang Fang', rv2_loc: 'カナダ',
+  rv2_text: '"療法ガイドの経穴図がとても実用的です！毎朝のルーティンに取り入れています。"',
+  rv2_purchased: 'ガイド',
+  rv3_name: 'David Chen', rv3_loc: 'イギリス',
+  rv3_text: '"体質テストで気虚と判明。3ヶ月間薬草レシピに従ったらエネルギーレベルが完全に変わりました。"',
+  rv3_purchased: 'マニュアル',
+  rv4_name: 'Wei Zhang', rv4_loc: 'オーストラリア',
+  rv4_text: '"5冊全部購入。3ヶ月で全体的な健康が明らかに改善しました！"',
+  rv4_purchased: '全セット',
+  review_more: 'レビューをもっと見る ▸',
+  promo_text: '🔥 限定オファー · 全巻50%OFF · 2026年6月30日まで',
+  about_title: 'Ancient Remediesについて',
+  about_text: 'Ancient Remediesは東洋文明の深い養生の知恵を保護し共有することに専念しています。各巻は古代の伝統と現代のウェルネスを結ぶ架け橋です。',
+  disclaimer: '免責事項：本書は教育および参考目的のみです。医療のアドバイスを構成するものではありません。健康計画を開始する前に、専門の医療従事者にご相談ください。',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
+  pay_title: 'スキャンして支払う', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. スマホでWeChatまたはAlipayを開く<br>2. 上記のQRコードをスキャン<br>3. 表示された金額を入力<br>4. 確認して支払いを完了',
+  pay_back: '買い物を続ける',
+  ai_title: '養生オラクル', ai_send: '送信',
+  ai_welcome: 'こんにちは！私は養生オラクルです。症状や健康のニーズを教えてください。最適な一冊をお勧めします。',
+  ai_placeholder: '症状や健康のニーズを入力...',
+  remove: '削除',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 ko: {
-  brand: '瓿犽癌鞏戩儩',
-  nav_home: '頇?, nav_products: '旎爥靺?, nav_reviews: '頉勱赴', nav_about: '靻岅皽',
+  brand: '고방양생',
+  nav_home: '홈', nav_products: '컬렉션', nav_reviews: '후기', nav_about: '소개',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: '霃欖枒 鞏戩儩 歆€順?路 觳滊厔 鞙犾偘',
-  hero_desc: '靾橃矞 雲勱皠 鞝勴暣 雮措牑鞓?旃橃湢鞚?牍勲皜鞚?氚滉铂頃橃劯鞖? 瓿犽寑 氍疙棇鞐?旮半霅?氙缄皠 鞖旊矔攵€韯?鞛愳棸鞚?毽摤鞐?毵烄稑 瓿勳爤 鞏戩儩氩曣箤歆€. 雼轨嫚鞚?鞝勳泊鞝侅澑 瓯搓皶 鞐爼鞚€ 鞐赴靹?鞁滌瀾霅╇媹雼?',
-  hero_cta1: '旎爥靺?韮愳儔', hero_cta2: '鞁犿儊鞐?氍魂赴',
-  products_title: '旎爥靺?,
-  products_desc: '5甓岇潣 霃欖枒 鞏戩儩 歆€順?靹滌爜, 臧?甓岇潃 瓿犽寑 旃橃湢 鞝勴喌鞙茧鞚?氍胳瀰雼堧嫟.',
-  pf_name: '氙缄皠 觳橂癌 雽€鞝?, pf_sub: '鍋忔柟澶у叏',
-  pf_desc: '8臧?鞁犾泊 鞁滌姢韰滌潣 59臧?瓴€歃濍悳 觳橂癌. 鞗愲 於滌矘鞕€ 順勲寑 鞖╇矔鞚?靾橂頃?頃犽ǜ雼堨潣 歆€順?氤措彀疥碃.',
-  pf_tag1: '59 觳橂癌', pf_tag2: '8 鞁滌姢韰?, pf_tag3: '於滌矘 靾橂',
-  ll_name: '臧€鞝?旃橂 臧€鞚措摐', ll_sub: '鐞嗙檪鎸囧崡',
-  ll_desc: '52臧?旃橂 霃欖瀾, 35臧?瓴巾槇 歆€霃? 6臧?欤检殧 鞁犾泊 攵€鞙?韽暔. 雼硠氤?靷巾檾鞕€ 鞛愱皜 甏€毽?旮半矔.',
-  ll_tag1: '52 霃欖瀾', ll_tag2: '35 瓴巾槇', ll_tag3: '6 攵€鞙?,
-  ys_name: '鞏戩儩 毵る壌鞏?, ys_sub: '椁婄敓鎵嬪唽',
-  ys_desc: '9臧€歆€ 觳挫 鞙犿槙氤?108臧?瓿勳爤 霠堨嫓頂? 毵?瓿勳爤 毵烄钉 鞏戩儩 瓿勴殟鞙茧 鞚岇嫕鞙茧 瓯搓皶鞚?',
-  ys_tag1: '108 霠堨嫓頂?, ys_tag2: '9 鞙犿槙', ys_tag3: '瓿勳爤 瓿勴殟',
-  hd_name: '頇╈牅雮搓步 路 鞝堦赴 鞏戩儩', hd_sub: '榛冨笣鍏х稉',
-  hd_desc: '鞓ろ枆 鞚措瓿?瓴诫澖 鞁滉硠 旮半皹 24鞝堦赴 鞏戩儩 臧€鞚措摐 鈥?欷戩潣頃?歆€順滌潣 鞕曣磤 氤挫劃.',
-  hd_tag1: '24 鞝堦赴', hd_tag2: '鞓ろ枆', hd_tag3: '瓴诫澖 鞁滉硠',
-  bc_name: '氤胳磮臧曤 路 鞁濎澊 鞖旊矔', bc_sub: '鏈崏缍辩洰',
-  bc_desc: '365臧€歆€ 鞎届灛, 200臧?鞚挫儊 鞁濎澊鞖旊矔 霠堨嫓頂? 觳挫鞐?毵烄稑 臧滌澑頇旊悳 鞁濎澊 旃橂鞕€ 鞓侅枒 氤挫订.',
-  bc_tag1: '365 鞎届灛', bc_tag2: '200+ 霠堨嫓頂?, bc_tag3: '觳挫 毵れ箻',
-  badge_hot: '鞚戈赴', badge_rec: '於旍矞', badge_treasure: '歆勴拡', badge_classic: '瓿犾爠', badge_herbal: '氤胳磮',
-  sale_50: '50% 頃犾澑', sale_limited: '頃滌爼韺?, sale_days_left: '毵堦皭 鞛勲皶',
-  add_cart: '鞛ル皵甑媹鞐?於旉皜', cart_label: '鞛ル皵甑媹', cart_title: '鞛ル皵甑媹 馃洅',
-  cart_empty: '鞛ル皵甑媹臧€ 牍勳柎 鞛堨姷雼堧嫟. 旎爥靺橃潉 韮愳儔頃橁碃 鞏戩儩 鞐爼鞚?鞁滌瀾頃橃劯鞖?',
-  cart_total: '頃╆硠', checkout: '瓴办牅 鈾?,
-  reviews_title: '頉勱赴',
-  reviews_desc: '鞝?靹戈硠 靷毄鞛愲摛鞚?氇╈唽毽? 瓿犽寑 旃橃湢鞚?歆€順滊ゼ 瓴巾棙頃?攵勲摛鞚?靸濎儩頃?頉勱赴.',
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12,847 旮€搿滊矊 毽钒', stat_recommend: '於旍矞鞙?,
-  rv1_name: 'Li Mingyuan', rv1_loc: '氙戈淡',
-  rv1_text: '"靸濌皶 靹ろ儠 韺?靾橅攧搿?2鞚?毵岇棎 臧愱赴臧€ 雮橃晿鞀惦媹雼? 頃犽ǜ雼堦皜 鞛愲瀾鞀る煬鞗岉晿鞁?瓯办槇鞖?鈥?鞝曤 須臣臧€ 鞛堨柎鞖?"',
-  rv1_purchased: '雽€鞝?,
-  rv2_name: 'Wang Fang', rv2_loc: '旌愲倶雼?,
-  rv2_text: '"旃橂 臧€鞚措摐鞚?瓴巾槇 歆€霃勱皜 鞝曤 鞁れ毄鞝侅澊鞐愳殧! 毵れ澕 鞎勳龚 耄嫶鞙茧 靷毄頃橁碃 鞛堨柎鞖?"',
-  rv2_purchased: '臧€鞚措摐',
-  rv3_name: 'David Chen', rv3_loc: '鞓侁淡',
-  rv3_text: '"觳挫 韰岇姢韸胳棎靹?旮绊棃鞙茧 雮橃檾鞀惦媹雼? 3臧滌洈臧?鞎届磮 霠堨嫓頂茧ゼ 霐半ジ 頉?鞐愲剤歆€臧€ 鞕勳爠頌?雼澕臁岇柎鞖?"',
-  rv3_purchased: '毵る壌鞏?,
-  rv4_name: 'Wei Zhang', rv4_loc: '順胳＜',
-  rv4_text: '"5甓?鞝勲秬 甑Г頄堨姷雼堧嫟. 3臧滌洈 毵岇棎 鞝勲皹鞝侅澑 瓯搓皶鞚?雸堨棎 霛勱矊 膦嬱晞臁岇柎鞖?"',
-  rv4_purchased: '鞝勳泊 靹疙姼',
-  review_more: '雿?毵庫潃 頉勱赴 鈻?,
-  promo_text: '馃敟 頃滌爼 鞓ろ嵓 路 鞝勱秾 50% 頃犾澑 路 2026雲?6鞗?30鞚?膦呺',
-  about_title: 'Ancient Remedies 靻岅皽',
-  about_text: 'Ancient Remedies電?霃欖枒 氍鸽獏鞚?鞁槫頃?鞏戩儩 歆€順滊ゼ 氤挫〈頃橁碃 瓿奠湢頃橂姅 雿?鞝勲厫頃╇媹雼? 臧?甓岇潃 瓿犽寑 鞝勴喌瓿?順勲寑 鞗半媹鞀るゼ 鞛囯姅 雼るΜ鞛呺媹雼?',
-  disclaimer: '氅挫眳 臁绊暛: 鞚?靹滌爜鞚€ 甑愳湣 氚?彀戈碃 氇╈爜鞙茧毵?鞝滉车霅╇媹雼? 鞚橅暀鞝?臁办柛鞚?甑劚頃橃 鞎婌姷雼堧嫟. 瓯搓皶 瓿勴殟 鞁滌瀾 鞝?鞝勲臧€鞕€ 靸侂嫶頃橃劯鞖?',
-  copyright: '漏 2026 Ancient Remedies. All rights reserved.',
-  pay_title: '鞀れ簲頃橃棳 瓴办牅', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
-  pay_tip: '1. 頊措寑韽办棎靹?WeChat 霕愲姅 Alipay 鞐搓赴<br>2. 鞙勳棎 響滌嫓霅?QR 旖旊摐 鞀れ簲<br>3. 響滌嫓霅?瓴办牅 旮堨暋 鞛呺牓<br>4. 頇曥澑頃橁碃 瓴办牅 鞕勲',
-  pay_back: '靽柬晳 瓿勳啀頃橁赴',
-  ai_title: '鞏戩儩 鞁犿儊', ai_send: '鞝勳啞',
-  ai_welcome: '鞎堧厱頃橃劯鞖? 鞝€電?鞏戩儩 鞁犿儊鞛呺媹雼? 歃濎儊鞚措倶 瓯搓皶 鞖旉惮靷暛鞚?鞎岆牑欤检嫓氅?鞝來暕頃?毂呾潉 於旍矞頃?霌滊Μ瓴犾姷雼堧嫟.',
-  ai_placeholder: '歃濎儊鞚措倶 瓯搓皶 鞖旉惮靷暛鞚?鞛呺牓頃橃劯鞖?..',
-  remove: '靷牅',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  hero_subtitle: '동양 양생 지혜 · 천년 유산',
+  hero_desc: '수천 년간 전해 내려온 치유의 비밀을 발견하세요. 고대 문헌에 기록된 민간 요법부터 자연의 리듬에 맞춘 계절 양생법까지. 당신의 전체적인 건강 여정은 여기서 시작됩니다.',
+  hero_cta1: '컬렉션 탐색', hero_cta2: '신탁에 묻기',
+  products_title: '컬렉션',
+  products_desc: '5권의 동양 양생 지혜 서적, 각 권은 고대 치유 전통으로의 문입니다.',
+  pf_name: '민간 처방 대전', pf_sub: '偏方大全',
+  pf_desc: '8개 신체 시스템의 59개 검증된 처방. 원문 출처와 현대 용법을 수록한 할머니의 지혜 보물창고.',
+  pf_tag1: '59 처방', pf_tag2: '8 시스템', pf_tag3: '출처 수록',
+  ll_name: '가정 치료 가이드', ll_sub: '理療指南',
+  ll_desc: '52개 치료 동작, 35개 경혈 지도, 6개 주요 신체 부위 포함. 단계별 삽화와 자가 관리 기법.',
+  ll_tag1: '52 동작', ll_tag2: '35 경혈', ll_tag3: '6 부위',
+  ys_name: '양생 매뉴얼', ys_sub: '養生手册',
+  ys_desc: '9가지 체질 유형별 108개 계절 레시피. 매 계절 맞춤 양생 계획으로 음식으로 건강을!',
+  ys_tag1: '108 레시피', ys_tag2: '9 유형', ys_tag3: '계절 계획',
+  hd_name: '황제내경 · 절기 양생', hd_sub: '黃帝內經',
+  hd_desc: '오행 이론과 경락 시계 기반 24절기 양생 가이드 — 중의학 지혜의 왕관 보석.',
+  hd_tag1: '24 절기', hd_tag2: '오행', hd_tag3: '경락 시계',
+  bc_name: '본초강목 · 식이 요법', bc_sub: '本草綱目',
+  bc_desc: '365가지 약재, 200개 이상 식이요법 레시피. 체질에 맞춘 개인화된 식이 치료와 영양 보충.',
+  bc_tag1: '365 약재', bc_tag2: '200+ 레시피', bc_tag3: '체질 매치',
+  badge_hot: '인기', badge_rec: '추천', badge_treasure: '진품', badge_classic: '고전', badge_herbal: '본초',
+  sale_50: '50% 할인', sale_limited: '한정판', sale_days_left: '마감 임박',
+  add_cart: '장바구니에 추가', cart_label: '장바구니', cart_title: '장바구니 🛒',
+  cart_empty: '장바구니가 비어 있습니다. 컬렉션을 탐색하고 양생 여정을 시작하세요!',
+  cart_total: '합계', checkout: '결제 ♦',
+  reviews_title: '후기',
+  reviews_desc: '전 세계 사용자들의 목소리. 고대 치유의 지혜를 경험한 분들의 생생한 후기.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 글로벌 리뷰', stat_recommend: '추천율',
+  rv1_name: 'Li Mingyuan', rv1_loc: '미국',
+  rv1_text: '"생강 설탕 파 수프로 2일 만에 감기가 나았습니다. 할머니가 자랑스러워하실 거예요 — 정말 효과가 있어요!"',
+  rv1_purchased: '대전',
+  rv2_name: 'Wang Fang', rv2_loc: '캐나다',
+  rv2_text: '"치료 가이드의 경혈 지도가 정말 실용적이에요! 매일 아침 루틴으로 사용하고 있어요."',
+  rv2_purchased: '가이드',
+  rv3_name: 'David Chen', rv3_loc: '영국',
+  rv3_text: '"체질 테스트에서 기허으로 나왔습니다. 3개월간 약초 레시피를 따른 후 에너지가 완전히 달라졌어요."',
+  rv3_purchased: '매뉴얼',
+  rv4_name: 'Wei Zhang', rv4_loc: '호주',
+  rv4_text: '"5권 전부 구매했습니다. 3개월 만에 전반적인 건강이 눈에 띄게 좋아졌어요!"',
+  rv4_purchased: '전체 세트',
+  review_more: '더 많은 후기 ▸',
+  promo_text: '🔥 한정 오퍼 · 전권 50% 할인 · 2026년 6월 30일 종료',
+  about_title: 'Ancient Remedies 소개',
+  about_text: 'Ancient Remedies는 동양 문명의 심오한 양생 지혜를 보존하고 공유하는 데 전념합니다. 각 권은 고대 전통과 현대 웰니스를 잇는 다리입니다.',
+  disclaimer: '면책 조항: 이 서적은 교육 및 참고 목적으로만 제공됩니다. 의학적 조언을 구성하지 않습니다. 건강 계획 시작 전 전문가와 상담하세요.',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
+  pay_title: '스캔하여 결제', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. 휴대폰에서 WeChat 또는 Alipay 열기<br>2. 위에 표시된 QR 코드 스캔<br>3. 표시된 결제 금액 입력<br>4. 확인하고 결제 완료',
+  pay_back: '쇼핑 계속하기',
+  ai_title: '양생 신탁', ai_send: '전송',
+  ai_welcome: '안녕하세요! 저는 양생 신탁입니다. 증상이나 건강 요구사항을 알려주시면 적합한 책을 추천해 드리겠습니다.',
+  ai_placeholder: '증상이나 건강 요구사항을 입력하세요...',
+  remove: '삭제',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 de: {
   brand: 'Ancient Remedies',
-  nav_home: 'Start', nav_products: 'Sammlung', nav_reviews: 'Bewertungen', nav_about: '脺ber uns',
+  nav_home: 'Start', nav_products: 'Sammlung', nav_reviews: 'Bewertungen', nav_about: 'Über uns',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: '脰stliche Wellness-Weisheit 路 Tausendj盲hriges Erbe',
-  hero_desc: 'Entdecken Sie die 眉ber Jahrtausende 眉berlieferten Heilgeheimnisse. Von antiken Rezepten bis hin zu saisonalen Wellness-Routinen im Einklang mit dem Rhythmus der Natur.',
+  hero_subtitle: 'Östliche Wellness-Weisheit · Tausendjähriges Erbe',
+  hero_desc: 'Entdecken Sie die über Jahrtausende überlieferten Heilgeheimnisse. Von antiken Rezepten bis hin zu saisonalen Wellness-Routinen im Einklang mit dem Rhythmus der Natur.',
   hero_cta1: 'Sammlung erkunden', hero_cta2: 'Das Orakel fragen',
   products_title: 'Die Sammlung',
-  products_desc: 'F眉nf B盲nde 枚stlicher Wellness-Weisheit, jeder ein Tor zu alten Heiltraditionen.',
-  pf_name: 'Volksheilmittel-Kompendium', pf_sub: '鍋忔柟澶у叏',
-  pf_desc: '59 bew盲hrte Formeln f眉r 8 K枚rpersysteme mit Quellenangaben und modernen Anwendungshinweisen.',
+  products_desc: 'Fünf Bände östlicher Wellness-Weisheit, jeder ein Tor zu alten Heiltraditionen.',
+  pf_name: 'Volksheilmittel-Kompendium', pf_sub: '偏方大全',
+  pf_desc: '59 bewährte Formeln für 8 Körpersysteme mit Quellenangaben und modernen Anwendungshinweisen.',
   pf_tag1: '59 Formeln', pf_tag2: '8 Systeme', pf_tag3: 'Mit Quellen',
-  ll_name: 'Haus-Therapie-Guide', ll_sub: '鐞嗙檪鎸囧崡',
-  ll_desc: '52 therapeutische Bewegungen, 35 Akupunkturpunkte, 6 K枚rperbereiche mit Schritt-f眉r-Schritt-Illustrationen.',
+  ll_name: 'Haus-Therapie-Guide', ll_sub: '理療指南',
+  ll_desc: '52 therapeutische Bewegungen, 35 Akupunkturpunkte, 6 Körperbereiche mit Schritt-für-Schritt-Illustrationen.',
   ll_tag1: '52 Bewegungen', ll_tag2: '35 Akupunkte', ll_tag3: '6 Bereiche',
-  ys_name: 'Wellness-Handbuch', ys_sub: '椁婄敓鎵嬪唽',
-  ys_desc: '108 saisonale Rezepte f眉r 9 Konstitutionstypen mit personalisierten Wellness-Pl盲nen f眉r jede Jahreszeit.',
+  ys_name: 'Wellness-Handbuch', ys_sub: '養生手册',
+  ys_desc: '108 saisonale Rezepte für 9 Konstitutionstypen mit personalisierten Wellness-Plänen für jede Jahreszeit.',
   ys_tag1: '108 Rezepte', ys_tag2: '9 Typen', ys_tag3: 'Jahreszeiten',
-  hd_name: 'Huangdi Neijing 路 Saisonale Wellness', hd_sub: '榛冨笣鍏х稉',
-  hd_desc: '24 solare Termine basierend auf F眉nf-Elemente-Theorie und Meridian-Uhr 鈥?die Krone der TCM-Weisheit.',
-  hd_tag1: '24 Solartermine', hd_tag2: 'F眉nf Elemente', hd_tag3: 'Meridian-Uhr',
-  bc_name: 'Bencao Gangmu 路 Di盲tetik', bc_sub: '鏈崏缍辩洰',
-  bc_desc: '365 Inhaltsstoffe, 200+ Rezepte, konstitutionsbasierte Ern盲hrungstherapie und personalisierte Heilung.',
+  hd_name: 'Huangdi Neijing · Saisonale Wellness', hd_sub: '黃帝內經',
+  hd_desc: '24 solare Termine basierend auf Fünf-Elemente-Theorie und Meridian-Uhr — die Krone der TCM-Weisheit.',
+  hd_tag1: '24 Solartermine', hd_tag2: 'Fünf Elemente', hd_tag3: 'Meridian-Uhr',
+  bc_name: 'Bencao Gangmu · Diätetik', bc_sub: '本草綱目',
+  bc_desc: '365 Inhaltsstoffe, 200+ Rezepte, konstitutionsbasierte Ernährungstherapie und personalisierte Heilung.',
   bc_tag1: '365 Stoffe', bc_tag2: '200+ Rezepte', bc_tag3: 'Konstitution',
-  badge_hot: 'BELIEBT', badge_rec: 'EMPFOHLEN', badge_treasure: 'SCHATZ', badge_classic: 'KLASSIK', badge_herbal: 'KR脛UTER',
+  badge_hot: 'BELIEBT', badge_rec: 'EMPFOHLEN', badge_treasure: 'SCHATZ', badge_classic: 'KLASSIK', badge_herbal: 'KRÄUTER',
   sale_50: '50% OFF', sale_limited: 'BEGRENZT', sale_days_left: 'Bald vorbei',
-  add_cart: 'In den Warenkorb', cart_label: 'Warenkorb', cart_title: 'Warenkorb 馃洅',
-  cart_empty: 'Ihr Warenkorb ist leer! Erkunden Sie unsere Sammlung f眉r Ihre Wellness-Reise!',
-  cart_total: 'Gesamt', checkout: 'Zur Kasse 鈾?,
+  add_cart: 'In den Warenkorb', cart_label: 'Warenkorb', cart_title: 'Warenkorb 🛒',
+  cart_empty: 'Ihr Warenkorb ist leer! Erkunden Sie unsere Sammlung für Ihre Wellness-Reise!',
+  cart_total: 'Gesamt', checkout: 'Zur Kasse ♦',
   reviews_title: 'Bewertungen',
   reviews_desc: 'Stimmen aus aller Welt, die die Weisheit des alten Heilens erlebt haben.',
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12.847 Globale Bewertungen', stat_recommend: 'Empfehlen',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12.847 Globale Bewertungen', stat_recommend: 'Empfehlen',
   rv1_name: 'Li Mingyuan', rv1_loc: 'USA',
-  rv1_text: '"Ingwer-Zucker-Zwiebelsuppe heilte meine Erk盲ltung in 2 Tagen. Oma w盲re so stolz 鈥?ihre Heilmittel funktionieren wirklich!"',
+  rv1_text: '"Ingwer-Zucker-Zwiebelsuppe heilte meine Erkältung in 2 Tagen. Oma wäre so stolz — ihre Heilmittel funktionieren wirklich!"',
   rv1_purchased: 'Kompendium',
   rv2_name: 'Wang Fang', rv2_loc: 'Kanada',
   rv2_text: '"Die Akupunktkarten im Therapie-Guide sind unglaublich praktisch! Ich verwende sie jeden Morgen."',
   rv2_purchased: 'Guide',
   rv3_name: 'David Chen', rv3_loc: 'UK',
-  rv3_text: '"Der Konstitutionstest zeigte Qi-Mangel. 3 Monate Kr盲uterrezepte sp盲ter 鈥?meine Energiewerte haben sich komplett transformiert."',
+  rv3_text: '"Der Konstitutionstest zeigte Qi-Mangel. 3 Monate Kräuterrezepte später — meine Energiewerte haben sich komplett transformiert."',
   rv3_purchased: 'Handbuch',
   rv4_name: 'Wei Zhang', rv4_loc: 'Australien',
-  rv4_text: '"Alle f眉nf B盲nde gekauft. Meine allgemeine Gesundheit hat sich in nur 3 Monaten deutlich verbessert!"',
+  rv4_text: '"Alle fünf Bände gekauft. Meine allgemeine Gesundheit hat sich in nur 3 Monaten deutlich verbessert!"',
   rv4_purchased: 'Komplett-Set',
-  review_more: 'Mehr Bewertungen 鈻?,
-  promo_text: '馃敟 Sonderangebot 路 50% auf alle B盲nde 路 Bis 30. Juni 2026',
-  about_title: '脺ber Ancient Remedies',
-  about_text: 'Ancient Remedies widmet sich der Bewahrung und Weitergabe der tiefen Wellness-Weisheit der 枚stlichen Zivilisation. Jeder Band ist eine Br眉cke zwischen alter Tradition und zeitgen枚ssischem Wohlbefinden.',
-  disclaimer: 'Haftungsausschluss: Diese B眉cher dienen ausschlie脽lich Bildungs- und Referenzzwecken. Sie stellen keine medizinische Beratung dar. Bitte konsultieren Sie einen qualifizierten Arzt.',
-  copyright: '漏 2026 Ancient Remedies. Alle Rechte vorbehalten.',
+  review_more: 'Mehr Bewertungen ▸',
+  promo_text: '🔥 Sonderangebot · 50% auf alle Bände · Bis 30. Juni 2026',
+  about_title: 'Über Ancient Remedies',
+  about_text: 'Ancient Remedies widmet sich der Bewahrung und Weitergabe der tiefen Wellness-Weisheit der östlichen Zivilisation. Jeder Band ist eine Brücke zwischen alter Tradition und zeitgenössischem Wohlbefinden.',
+  disclaimer: 'Haftungsausschluss: Diese Bücher dienen ausschließlich Bildungs- und Referenzzwecken. Sie stellen keine medizinische Beratung dar. Bitte konsultieren Sie einen qualifizierten Arzt.',
+  copyright: '© 2026 Ancient Remedies. Alle Rechte vorbehalten.',
   pay_title: 'Zum Bezahlen scannen', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
-  pay_tip: '1. 脰ffnen Sie WeChat oder Alipay<br>2. Scannen Sie den obigen QR-Code<br>3. Geben Sie den angezeigten Betrag ein<br>4. Best盲tigen und schlie脽en Sie die Zahlung ab',
+  pay_tip: '1. Öffnen Sie WeChat oder Alipay<br>2. Scannen Sie den obigen QR-Code<br>3. Geben Sie den angezeigten Betrag ein<br>4. Bestätigen und schließen Sie die Zahlung ab',
   pay_back: 'Weiter einkaufen',
   ai_title: 'Wellness-Orakel', ai_send: 'Senden',
-  ai_welcome: 'Hallo! Ich bin das Wellness-Orakel. Beschreiben Sie Ihre Symptome und ich empfehle das passende Buch f眉r Ihre Heilungsreise.',
+  ai_welcome: 'Hallo! Ich bin das Wellness-Orakel. Beschreiben Sie Ihre Symptome und ich empfehle das passende Buch für Ihre Heilungsreise.',
   ai_placeholder: 'Beschreiben Sie Ihre Symptome...',
   remove: 'Entfernen',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 fr: {
   brand: 'Ancient Remedies',
-  nav_home: 'Accueil', nav_products: 'Collection', nav_reviews: 'T茅moignages', nav_about: '脌 propos',
+  nav_home: 'Accueil', nav_products: 'Collection', nav_reviews: 'Témoignages', nav_about: 'À propos',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: 'Sagesse du bien-锚tre oriental 路 H茅ritage mill茅naire',
-  hero_desc: 'D茅couvrez les secrets de gu茅rison transmis au fil des mill茅naires. Des rem猫des populaires anciens aux routines saisonni猫res align茅es sur le rythme de la nature.',
+  hero_subtitle: 'Sagesse du bien-être oriental · Héritage millénaire',
+  hero_desc: 'Découvrez les secrets de guérison transmis au fil des millénaires. Des remèdes populaires anciens aux routines saisonnières alignées sur le rythme de la nature.',
   hero_cta1: 'Explorer la collection', hero_cta2: 'Consulter l\'Oracle',
   products_title: 'La Collection',
-  products_desc: 'Cinq volumes de sagesse orientale du bien-锚tre, chacun une porte vers les traditions de gu茅rison anciennes.',
-  pf_name: 'Compendium de rem猫des populaires', pf_sub: '鍋忔柟澶у叏',
-  pf_desc: '59 formules 茅prouv茅es pour 8 syst猫mes corporels, avec citations originales et notes d\'utilisation modernes.',
-  pf_tag1: '59 Formules', pf_tag2: '8 Syst猫mes', pf_tag3: 'Avec sources',
-  ll_name: 'Guide de th茅rapie 脿 domicile', ll_sub: '鐞嗙檪鎸囧崡',
-  ll_desc: '52 mouvements th茅rapeutiques, 35 points d\'acupuncture, 6 zones corporelles avec illustrations 茅tape par 茅tape.',
+  products_desc: 'Cinq volumes de sagesse orientale du bien-être, chacun une porte vers les traditions de guérison anciennes.',
+  pf_name: 'Compendium de remèdes populaires', pf_sub: '偏方大全',
+  pf_desc: '59 formules éprouvées pour 8 systèmes corporels, avec citations originales et notes d\'utilisation modernes.',
+  pf_tag1: '59 Formules', pf_tag2: '8 Systèmes', pf_tag3: 'Avec sources',
+  ll_name: 'Guide de thérapie à domicile', ll_sub: '理療指南',
+  ll_desc: '52 mouvements thérapeutiques, 35 points d\'acupuncture, 6 zones corporelles avec illustrations étape par étape.',
   ll_tag1: '52 Mouvements', ll_tag2: '35 Acupoints', ll_tag3: '6 Zones',
-  ys_name: 'Manuel de bien-锚tre', ys_sub: '椁婄敓鎵嬪唽',
-  ys_desc: '108 recettes saisonni猫res pour 9 types de constitution, avec des plans de bien-锚tre personnalis茅s pour chaque saison.',
+  ys_name: 'Manuel de bien-être', ys_sub: '養生手册',
+  ys_desc: '108 recettes saisonnières pour 9 types de constitution, avec des plans de bien-être personnalisés pour chaque saison.',
   ys_tag1: '108 Recettes', ys_tag2: '9 Types', ys_tag3: 'Plans saisonniers',
-  hd_name: 'Huangdi Neijing 路 Bien-锚tre saisonnier', hd_sub: '榛冨笣鍏х稉',
-  hd_desc: 'Guide des 24 termes solaires bas茅 sur la th茅orie des Cinq 脡l茅ments et l\'Horloge des M茅ridiens 鈥?le joyau de la sagesse TCM.',
-  hd_tag1: '24 Termes solaires', hd_tag2: 'Cinq 脡l茅ments', hd_tag3: 'Horloge M茅ridienne',
-  bc_name: 'Bencao Gangmu 路 Di茅t茅tique', bc_sub: '鏈崏缍辩洰',
-  bc_desc: '365 ingr茅dients m茅dicinaux, 200+ recettes th茅rapeutiques, correspondance par type de constitution pour une gu茅rison di茅t茅tique personnalis茅e.',
-  bc_tag1: '365 Ingr茅dients', bc_tag2: '200+ Recettes', bc_tag3: 'Constitution',
-  badge_hot: 'POPULAIRE', badge_rec: 'RECOMMAND脡', badge_treasure: 'TR脡SOR', badge_classic: 'CLASSIQUE', badge_herbal: 'HERBAL',
-  sale_50: '50% OFF', sale_limited: 'LIMIT脡', sale_days_left: 'Bient么t termin茅',
-  add_cart: 'Ajouter au panier', cart_label: 'Panier', cart_title: 'Panier 馃洅',
-  cart_empty: 'Votre panier est vide ! Explorez notre collection pour commencer votre voyage vers le bien-锚tre !',
-  cart_total: 'Total', checkout: 'Payer 鈾?,
-  reviews_title: 'T茅moignages',
-  reviews_desc: 'Voix du monde entier qui ont exp茅riment茅 la sagesse de la gu茅rison ancienne.',
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12 847 avis mondiaux', stat_recommend: 'Recommandent',
-  rv1_name: 'Li Mingyuan', rv1_loc: '脡tats-Unis',
-  rv1_text: '"La soupe gingembre-sucre-oignon m\'a gu茅ri en 2 jours. Grand-m猫re serait fi猫re 鈥?ses rem猫des fonctionnent vraiment !"',
+  hd_name: 'Huangdi Neijing · Bien-être saisonnier', hd_sub: '黃帝內經',
+  hd_desc: 'Guide des 24 termes solaires basé sur la théorie des Cinq Éléments et l\'Horloge des Méridiens — le joyau de la sagesse TCM.',
+  hd_tag1: '24 Termes solaires', hd_tag2: 'Cinq Éléments', hd_tag3: 'Horloge Méridienne',
+  bc_name: 'Bencao Gangmu · Diététique', bc_sub: '本草綱目',
+  bc_desc: '365 ingrédients médicinaux, 200+ recettes thérapeutiques, correspondance par type de constitution pour une guérison diététique personnalisée.',
+  bc_tag1: '365 Ingrédients', bc_tag2: '200+ Recettes', bc_tag3: 'Constitution',
+  badge_hot: 'POPULAIRE', badge_rec: 'RECOMMANDÉ', badge_treasure: 'TRÉSOR', badge_classic: 'CLASSIQUE', badge_herbal: 'HERBAL',
+  sale_50: '50% OFF', sale_limited: 'LIMITÉ', sale_days_left: 'Bientôt terminé',
+  add_cart: 'Ajouter au panier', cart_label: 'Panier', cart_title: 'Panier 🛒',
+  cart_empty: 'Votre panier est vide ! Explorez notre collection pour commencer votre voyage vers le bien-être !',
+  cart_total: 'Total', checkout: 'Payer ♦',
+  reviews_title: 'Témoignages',
+  reviews_desc: 'Voix du monde entier qui ont expérimenté la sagesse de la guérison ancienne.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12 847 avis mondiaux', stat_recommend: 'Recommandent',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'États-Unis',
+  rv1_text: '"La soupe gingembre-sucre-oignon m\'a guéri en 2 jours. Grand-mère serait fière — ses remèdes fonctionnent vraiment !"',
   rv1_purchased: 'Compendium',
   rv2_name: 'Wang Fang', rv2_loc: 'Canada',
   rv2_text: '"Les cartes d\'acupuncture du Guide sont incroyablement pratiques ! Je les utilise chaque matin dans ma routine."',
   rv2_purchased: 'Guide',
   rv3_name: 'David Chen', rv3_loc: 'Royaume-Uni',
-  rv3_text: '"Le test de constitution a montr茅 un d茅ficit de Qi. 3 mois de recettes herbales plus tard 鈥?mon 茅nergie s\'est compl猫tement transform茅e."',
+  rv3_text: '"Le test de constitution a montré un déficit de Qi. 3 mois de recettes herbales plus tard — mon énergie s\'est complètement transformée."',
   rv3_purchased: 'Manuel',
   rv4_name: 'Wei Zhang', rv4_loc: 'Australie',
-  rv4_text: '"Achet茅 les cinq volumes. Ma sant茅 g茅n茅rale s\'est nettement am茅lior茅e en seulement 3 mois !"',
+  rv4_text: '"Acheté les cinq volumes. Ma santé générale s\'est nettement améliorée en seulement 3 mois !"',
   rv4_purchased: 'Set complet',
-  review_more: 'Plus d\'avis 鈻?,
-  promo_text: '馃敟 Offre limit茅e 路 50% sur tous les volumes 路 Jusqu\'au 30 juin 2026',
-  about_title: '脌 propos d\'Ancient Remedies',
-  about_text: 'Ancient Remedies est d茅di茅 脿 la pr茅servation de la sagesse du bien-锚tre de la civilisation orientale. Chaque volume est un pont entre la tradition ancienne et le bien-锚tre contemporain.',
-  disclaimer: 'Avertissement : Ces livres sont fournis 脿 des fins 茅ducatives et de r茅f茅rence uniquement. Ils ne constituent pas un avis m茅dical. Consultez un professionnel de sant茅 qualifi茅.',
-  copyright: '漏 2026 Ancient Remedies. Tous droits r茅serv茅s.',
+  review_more: 'Plus d\'avis ▸',
+  promo_text: '🔥 Offre limitée · 50% sur tous les volumes · Jusqu\'au 30 juin 2026',
+  about_title: 'À propos d\'Ancient Remedies',
+  about_text: 'Ancient Remedies est dédié à la préservation de la sagesse du bien-être de la civilisation orientale. Chaque volume est un pont entre la tradition ancienne et le bien-être contemporain.',
+  disclaimer: 'Avertissement : Ces livres sont fournis à des fins éducatives et de référence uniquement. Ils ne constituent pas un avis médical. Consultez un professionnel de santé qualifié.',
+  copyright: '© 2026 Ancient Remedies. Tous droits réservés.',
   pay_title: 'Scanner pour payer', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
-  pay_tip: '1. Ouvrez WeChat ou Alipay<br>2. Scannez le QR code ci-dessus<br>3. Entrez le montant affich茅<br>4. Confirmez et finalisez le paiement',
+  pay_tip: '1. Ouvrez WeChat ou Alipay<br>2. Scannez le QR code ci-dessus<br>3. Entrez le montant affiché<br>4. Confirmez et finalisez le paiement',
   pay_back: 'Continuer les achats',
-  ai_title: 'Oracle du bien-锚tre', ai_send: 'Envoyer',
-  ai_welcome: 'Bonjour ! Je suis l\'Oracle du bien-锚tre. D茅crivez vos sympt么mes et je recommanderai le volume adapt茅 脿 votre parcours de gu茅rison.',
-  ai_placeholder: 'D茅crivez vos sympt么mes...',
+  ai_title: 'Oracle du bien-être', ai_send: 'Envoyer',
+  ai_welcome: 'Bonjour ! Je suis l\'Oracle du bien-être. Décrivez vos symptômes et je recommanderai le volume adapté à votre parcours de guérison.',
+  ai_placeholder: 'Décrivez vos symptômes...',
   remove: 'Supprimer',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 },
 ar: {
-  brand: '丕賱胤亘 丕賱賯丿賷賲',
-  nav_home: '丕賱乇卅賷爻賷丞', nav_products: '丕賱賲噩賲賵毓丞', nav_reviews: '丕賱鬲賯賷賷賲丕鬲', nav_about: '毓賳',
+  brand: 'الطب القديم',
+  nav_home: 'الرئيسية', nav_products: 'المجموعة', nav_reviews: 'التقييمات', nav_about: 'عن',
   hero_title: 'Ancient Remedies',
-  hero_subtitle: '丨賰賲丞 丕賱氐丨丞 丕賱卮乇賯賷丞 路 鬲乇丕孬 兀賱賮 毓丕賲',
-  hero_desc: '丕賰鬲卮賮 兀爻乇丕乇 丕賱卮賮丕亍 丕賱賲賵乇賵孬丞 毓亘乇 丌賱丕賮 丕賱爻賳賷賳. 賲賳 丕賱賵氐賮丕鬲 丕賱卮毓亘賷丞 丕賱賲爻噩賱丞 賮賷 丕賱賳氐賵氐 丕賱賯丿賷賲丞 廿賱賶 乇賵鬲賷賳丕鬲 丕賱氐丨丞 丕賱賲賵爻賲賷丞 丕賱賲鬲賵丕賮賯丞 賲毓 廿賷賯丕毓 丕賱胤亘賷毓丞 鈥?乇丨賱鬲賰 賳丨賵 丕賱氐丨丞 丕賱卮丕賲賱丞 鬲亘丿兀 賴賳丕.',
-  hero_cta1: '丕爻鬲賰卮賮 丕賱賲噩賲賵毓丞', hero_cta2: '丕爻兀賱 丕賱毓乇賾丕賮',
-  products_title: '丕賱賲噩賲賵毓丞',
-  products_desc: '禺賲爻丞 賲噩賱丿丕鬲 賲賳 丨賰賲丞 丕賱氐丨丞 丕賱卮乇賯賷丞貙 賰賱 賲賳賴丕 亘賵丕亘丞 賱鬲賯丕賱賷丿 丕賱卮賮丕亍 丕賱賯丿賷賲丞.',
-  pf_name: '賲賵爻賵毓丞 丕賱毓賱丕噩丕鬲 丕賱卮毓亘賷丞', pf_sub: '鍋忔柟澶у叏',
-  pf_desc: '59 賵氐賮丞 賲噩乇亘丞 毓亘乇 8 兀噩賴夭丞 噩爻丿賷丞 賲毓 丕賱丕爻鬲卮賴丕丿丕鬲 丕賱兀氐賱賷丞 賵賲賱丕丨馗丕鬲 丕賱丕爻鬲禺丿丕賲 丕賱丨丿賷孬. 賰賳夭 賲賳 丨賰賲丞 丕賱兀噩丿丕丿.',
-  pf_tag1: '59 賵氐賮丞', pf_tag2: '8 兀噩賴夭丞', pf_tag3: '賲毓 丕賱賲氐丕丿乇',
-  ll_name: '丿賱賷賱 丕賱毓賱丕噩 丕賱賲賳夭賱賷', ll_sub: '鐞嗙檪鎸囧崡',
-  ll_desc: '52 丨乇賰丞 毓賱丕噩賷丞貙 35 禺乇賷胤丞 賱賳賯丕胤 丕賱廿亘乇貙 鬲睾胤賷 6 賲賳丕胤賯 噩爻丿賷丞 乇卅賷爻賷丞 賲毓 乇爻賵賲丕鬲 鬲賵囟賷丨賷丞 禺胤賵丞 亘禺胤賵丞.',
-  ll_tag1: '52 丨乇賰丞', ll_tag2: '35 賳賯胤丞', ll_tag3: '6 賲賳丕胤賯',
-  ys_name: '丿賱賷賱 丕賱氐丨丞 丕賱卮丕賲賱', ys_sub: '椁婄敓鎵嬪唽',
-  ys_desc: '108 賵氐賮丞 賲賵爻賲賷丞 賱賭 9 兀賳賵丕毓 賲賳 丕賱鬲乇賰賷亘丕鬲 丕賱噩爻丿賷丞 賲毓 禺胤胤 氐丨丞 卮禺氐賷丞 賱賰賱 賲賵爻賲.',
-  ys_tag1: '108 賵氐賮丕鬲', ys_tag2: '9 兀賳賵丕毓', ys_tag3: '禺胤胤 賲賵爻賲賷丞',
-  hd_name: '賴賵丕賳睾丿賷 賳賷噩賷賳睾 路 丕賱氐丨丞 丕賱賲賵爻賲賷丞', hd_sub: '榛冨笣鍏х稉',
-  hd_desc: '丿賱賷賱 24 賲氐胤賱丨賸丕 卮賲爻賷賸丕 賲亘賳賷賸丕 毓賱賶 賳馗乇賷丞 丕賱毓賳丕氐乇 丕賱禺賲爻丞 賵爻丕毓丞 丕賱賯賳賵丕鬲 鈥?噩賵賴乇丞 丨賰賲丞 丕賱胤亘 丕賱氐賷賳賷 丕賱鬲賯賱賷丿賷.',
-  hd_tag1: '24 賲氐胤賱丨 卮賲爻賷', hd_tag2: '丕賱毓賳丕氐乇 丕賱禺賲爻丞', hd_tag3: '爻丕毓丞 丕賱賯賳賵丕鬲',
-  bc_name: '亘賳鬲爻丕賵 睾丕賳睾賲賵 路 丕賱毓賱丕噩 丕賱睾匕丕卅賷', bc_sub: '鏈崏缍辩洰',
-  bc_desc: '365 賲賰賵賳 胤亘賷貙 兀賰孬乇 賲賳 200 賵氐賮丞 毓賱丕噩賷丞貙 賲胤丕亘賯丞 丨爻亘 賳賵毓 丕賱鬲乇賰賷亘 丕賱噩爻丿賷 賱賱毓賱丕噩 丕賱睾匕丕卅賷 丕賱卮禺氐賷.',
-  bc_tag1: '365 賲賰賵賳', bc_tag2: '200+ 賵氐賮丞', bc_tag3: '賲胤丕亘賯丞 丕賱鬲乇賰賷亘',
-  badge_hot: '乇丕卅噩', badge_rec: '賲賵氐賶 亘賴', badge_treasure: '賰賳夭', badge_classic: '賰賱丕爻賷賰賷', badge_herbal: '兀毓卮丕亘',
-  sale_50: '50% 禺氐賲', sale_limited: '賲丨丿賵丿', sale_days_left: '賷賳鬲賴賷 賯乇賷亘賸丕',
-  add_cart: '兀囟賮 賱賱爻賱丞', cart_label: '丕賱爻賱丞', cart_title: '丕賱爻賱丞 馃洅',
-  cart_empty: '爻賱鬲賰 賮丕乇睾丞! 丕爻鬲賰卮賮 賲噩賲賵毓鬲賳丕 賱亘丿亍 乇丨賱鬲賰 賳丨賵 丕賱氐丨丞 賵丕賱毓丕賮賷丞!',
-  cart_total: '丕賱賲噩賲賵毓', checkout: '丕賱丿賮毓 鈾?,
-  reviews_title: '丕賱鬲賯賷賷賲丕鬲',
-  reviews_desc: '兀氐賵丕鬲 賲賳 噩賲賷毓 兀賳丨丕亍 丕賱毓丕賱賲 賲賲賳 丕禺鬲亘乇賵丕 丨賰賲丞 丕賱卮賮丕亍 丕賱賯丿賷賲丞.',
-  stat_rating: '猸?4.8/5.0', stat_reviewers: '12,847 鬲賯賷賷賲 毓丕賱賲賷', stat_recommend: '賷賵氐賵賳',
-  rv1_name: 'Li Mingyuan', rv1_loc: '兀賲乇賷賰丕',
-  rv1_text: '"卮賵乇亘丞 丕賱夭賳噩亘賷賱 賵丕賱爻賰乇 賵丕賱亘氐賱 卮賮鬲賳賷 禺賱丕賱 賷賵賲賷賳. 噩丿鬲賷 爻鬲賰賵賳 賮禺賵乇丞 鈥?毓賱丕噩丕鬲賴丕 賮毓賱丕賸 鬲毓賲賱!"',
-  rv1_purchased: '丕賱賲賵爻賵毓丞',
-  rv2_name: 'Wang Fang', rv2_loc: '賰賳丿丕',
-  rv2_text: '"禺乇丕卅胤 丕賱賵禺夭 賮賷 丿賱賷賱 丕賱毓賱丕噩 毓賲賱賷丞 賱賱睾丕賷丞! 兀爻鬲禺丿賲賴丕 賰賱 氐亘丕丨 賰噩夭亍 賲賳 乇賵鬲賷賳賷."',
-  rv2_purchased: '丕賱丿賱賷賱',
-  rv3_name: 'David Chen', rv3_loc: '亘乇賷胤丕賳賷丕',
-  rv3_text: '"丕禺鬲亘丕乇 丕賱鬲乇賰賷亘 兀馗賴乇 賳賯氐 丕賱胤丕賯丞. 丕鬲亘毓鬲 賵氐賮丕鬲 丕賱兀毓卮丕亘 賱賲丿丞 3 兀卮賴乇 賵賲爻鬲賵賷丕鬲 丕賱胤丕賯丞 鬲丨賵賱鬲 鬲賲丕賲賸丕."',
-  rv3_purchased: '丕賱丿賱賷賱 丕賱氐丨賷',
-  rv4_name: 'Wei Zhang', rv4_loc: '兀爻鬲乇丕賱賷丕',
-  rv4_text: '"丕卮鬲乇賷鬲 丕賱賲噩賱丿丕鬲 丕賱禺賲爻丞 噩賲賷毓賸丕. 氐丨鬲賷 丕賱廿噩賲丕賱賷丞 鬲丨爻賳鬲 亘卮賰賱 賲賱丨賵馗 賮賷 3 兀卮賴乇 賮賯胤!"',
-  rv4_purchased: '丕賱賲噩賲賵毓丞 丕賱賰丕賲賱丞',
-  review_more: '丕賱賲夭賷丿 賲賳 丕賱鬲賯賷賷賲丕鬲 鈻?,
-  promo_text: '馃敟 毓乇囟 賲丨丿賵丿 路 50% 禺氐賲 毓賱賶 噩賲賷毓 丕賱賲噩賱丿丕鬲 路 賷賳鬲賴賷 30 賷賵賳賷賵 2026',
-  about_title: '毓賳 丕賱胤亘 丕賱賯丿賷賲',
-  about_text: 'Ancient Remedies 賲賰乇爻 賱賱丨賮丕馗 毓賱賶 丨賰賲丞 丕賱氐丨丞 丕賱毓賲賷賯丞 賱賱丨囟丕乇丞 丕賱卮乇賯賷丞 賵賲卮丕乇賰鬲賴丕. 賰賱 賲噩賱丿 賴賵 噩爻乇 亘賷賳 丕賱鬲賯丕賱賷丿 丕賱賯丿賷賲丞 賵丕賱氐丨丞 丕賱賲毓丕氐乇丞.',
-  disclaimer: '廿禺賱丕亍 賲爻丐賵賱賷丞: 賴匕賴 丕賱賰鬲亘 賱兀睾乇丕囟 鬲毓賱賷賲賷丞 賵賲乇噩毓賷丞 賮賯胤. 賱丕 鬲卮賰賱 賳氐賷丨丞 胤亘賷丞. 賷乇噩賶 丕爻鬲卮丕乇丞 兀禺氐丕卅賷 乇毓丕賷丞 氐丨賷丞 賲丐賴賱 賯亘賱 亘丿亍 兀賷 賳馗丕賲 氐丨賷.',
-  copyright: '漏 2026 Ancient Remedies. 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞.',
-  pay_title: '丕賲爻丨 賱賱丿賮毓', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
-  pay_tip: '1. 丕賮鬲丨 WeChat 兀賵 Alipay 毓賱賶 賴丕鬲賮賰<br>2. 丕賲爻丨 乇賲夭 QR 丕賱賲毓乇賵囟 兀毓賱丕賴<br>3. 兀丿禺賱 賲亘賱睾 丕賱丿賮毓 丕賱賲毓乇賵囟<br>4. 兀賰丿 賵兀賰賲賱 丕賱丿賮毓',
-  pay_back: '賲鬲丕亘毓丞 丕賱鬲爻賵賯',
-  ai_title: '毓乇賾丕賮 丕賱氐丨丞', ai_send: '廿乇爻丕賱',
-  ai_welcome: '賲乇丨亘賸丕! 兀賳丕 毓乇賾丕賮 丕賱氐丨丞. 氐賮 兀毓乇丕囟賰 兀賵 丕丨鬲賷丕噩丕鬲賰 丕賱氐丨賷丞 賵爻兀賵氐賷 亘丕賱賲噩賱丿 丕賱賲賳丕爻亘 賱乇丨賱丞 卮賮丕卅賰.',
-  ai_placeholder: '氐賮 兀毓乇丕囟賰 兀賵 丕丨鬲賷丕噩丕鬲賰 丕賱氐丨賷丞...',
-  remove: '丨匕賮',
-  label_pianfang: '鏂?, label_liliao: '鐞?, label_yangsheng: '鍏?, label_huangdi: '榛?, label_bencao: '鑽?
+  hero_subtitle: 'حكمة الصحة الشرقية · تراث ألف عام',
+  hero_desc: 'اكتشف أسرار الشفاء الموروثة عبر آلاف السنين. من الوصفات الشعبية المسجلة في النصوص القديمة إلى روتينات الصحة الموسمية المتوافقة مع إيقاع الطبيعة — رحلتك نحو الصحة الشاملة تبدأ هنا.',
+  hero_cta1: 'استكشف المجموعة', hero_cta2: 'اسأل العرّاف',
+  products_title: 'المجموعة',
+  products_desc: 'خمسة مجلدات من حكمة الصحة الشرقية، كل منها بوابة لتقاليد الشفاء القديمة.',
+  pf_name: 'موسوعة العلاجات الشعبية', pf_sub: '偏方大全',
+  pf_desc: '59 وصفة مجربة عبر 8 أجهزة جسدية مع الاستشهادات الأصلية وملاحظات الاستخدام الحديث. كنز من حكمة الأجداد.',
+  pf_tag1: '59 وصفة', pf_tag2: '8 أجهزة', pf_tag3: 'مع المصادر',
+  ll_name: 'دليل العلاج المنزلي', ll_sub: '理療指南',
+  ll_desc: '52 حركة علاجية، 35 خريطة لنقاط الإبر، تغطي 6 مناطق جسدية رئيسية مع رسومات توضيحية خطوة بخطوة.',
+  ll_tag1: '52 حركة', ll_tag2: '35 نقطة', ll_tag3: '6 مناطق',
+  ys_name: 'دليل الصحة الشامل', ys_sub: '養生手册',
+  ys_desc: '108 وصفة موسمية لـ 9 أنواع من التركيبات الجسدية مع خطط صحة شخصية لكل موسم.',
+  ys_tag1: '108 وصفات', ys_tag2: '9 أنواع', ys_tag3: 'خطط موسمية',
+  hd_name: 'هوانغدي نيجينغ · الصحة الموسمية', hd_sub: '黃帝內經',
+  hd_desc: 'دليل 24 مصطلحًا شمسيًا مبنيًا على نظرية العناصر الخمسة وساعة القنوات — جوهرة حكمة الطب الصيني التقليدي.',
+  hd_tag1: '24 مصطلح شمسي', hd_tag2: 'العناصر الخمسة', hd_tag3: 'ساعة القنوات',
+  bc_name: 'بنتساو غانغمو · العلاج الغذائي', bc_sub: '本草綱目',
+  bc_desc: '365 مكون طبي، أكثر من 200 وصفة علاجية، مطابقة حسب نوع التركيب الجسدي للعلاج الغذائي الشخصي.',
+  bc_tag1: '365 مكون', bc_tag2: '200+ وصفة', bc_tag3: 'مطابقة التركيب',
+  badge_hot: 'رائج', badge_rec: 'موصى به', badge_treasure: 'كنز', badge_classic: 'كلاسيكي', badge_herbal: 'أعشاب',
+  sale_50: '50% خصم', sale_limited: 'محدود', sale_days_left: 'ينتهي قريبًا',
+  add_cart: 'أضف للسلة', cart_label: 'السلة', cart_title: 'السلة 🛒',
+  cart_empty: 'سلتك فارغة! استكشف مجموعتنا لبدء رحلتك نحو الصحة والعافية!',
+  cart_total: 'المجموع', checkout: 'الدفع ♦',
+  reviews_title: 'التقييمات',
+  reviews_desc: 'أصوات من جميع أنحاء العالم ممن اختبروا حكمة الشفاء القديمة.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 تقييم عالمي', stat_recommend: 'يوصون',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'أمريكا',
+  rv1_text: '"شوربة الزنجبيل والسكر والبصل شفتني خلال يومين. جدتي ستكون فخورة — علاجاتها فعلاً تعمل!"',
+  rv1_purchased: 'الموسوعة',
+  rv2_name: 'Wang Fang', rv2_loc: 'كندا',
+  rv2_text: '"خرائط الوخز في دليل العلاج عملية للغاية! أستخدمها كل صباح كجزء من روتيني."',
+  rv2_purchased: 'الدليل',
+  rv3_name: 'David Chen', rv3_loc: 'بريطانيا',
+  rv3_text: '"اختبار التركيب أظهر نقص الطاقة. اتبعت وصفات الأعشاب لمدة 3 أشهر ومستويات الطاقة تحولت تمامًا."',
+  rv3_purchased: 'الدليل الصحي',
+  rv4_name: 'Wei Zhang', rv4_loc: 'أستراليا',
+  rv4_text: '"اشتريت المجلدات الخمسة جميعًا. صحتي الإجمالية تحسنت بشكل ملحوظ في 3 أشهر فقط!"',
+  rv4_purchased: 'المجموعة الكاملة',
+  review_more: 'المزيد من التقييمات ▸',
+  promo_text: '🔥 عرض محدود · 50% خصم على جميع المجلدات · ينتهي 30 يونيو 2026',
+  about_title: 'عن الطب القديم',
+  about_text: 'Ancient Remedies مكرس للحفاظ على حكمة الصحة العميقة للحضارة الشرقية ومشاركتها. كل مجلد هو جسر بين التقاليد القديمة والصحة المعاصرة.',
+  disclaimer: 'إخلاء مسؤولية: هذه الكتب لأغراض تعليمية ومرجعية فقط. لا تشكل نصيحة طبية. يرجى استشارة أخصائي رعاية صحية مؤهل قبل بدء أي نظام صحي.',
+  copyright: '© 2026 Ancient Remedies. جميع الحقوق محفوظة.',
+  pay_title: 'امسح للدفع', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. افتح WeChat أو Alipay على هاتفك<br>2. امسح رمز QR المعروض أعلاه<br>3. أدخل مبلغ الدفع المعروض<br>4. أكد وأكمل الدفع',
+  pay_back: 'متابعة التسوق',
+  ai_title: 'عرّاف الصحة', ai_send: 'إرسال',
+  ai_welcome: 'مرحبًا! أنا عرّاف الصحة. صف أعراضك أو احتياجاتك الصحية وسأوصي بالمجلد المناسب لرحلة شفائك.',
+  ai_placeholder: 'صف أعراضك أو احتياجاتك الصحية...',
+  remove: 'حذف',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
 }
 };
 
@@ -1695,7 +1695,7 @@ function renderProducts() {
 // ===================== RENDER REVIEWS =====================
 function renderReviews() {
   var grid = document.getElementById('reviewsGrid');
-  var stars = '鈽呪槄鈽呪槄鈽?;
+  var stars = '★★★★☆';
   var html = '';
   for (var i = 1; i <= 4; i++) {
     html += '<div class="review-card">'
@@ -1769,11 +1769,11 @@ function renderCart() {
       + '<div class="item-price">$' + p.price + ' &times; ' + item.qty + ' = $' + subtotal.toFixed(1) + '</div>'
       + '</div>'
       + '<div class="qty-control">'
-      + '<button onclick="changeQty(\'' + item.id + '\',-1)">鈭?/button>'
+      + '<button onclick="changeQty(\'' + item.id + '\',-1)">−</button>'
       + '<span>' + item.qty + '</span>'
       + '<button onclick="changeQty(\'' + item.id + '\',1)">+</button>'
       + '</div>'
-      + '<span class="del-btn" onclick="removeFromCart(\'' + item.id + '\')">鉁?/span>'
+      + '<span class="del-btn" onclick="removeFromCart(\'' + item.id + '\')">✕</span>'
       + '</div>';
   });
   container.innerHTML = html;
@@ -1833,27 +1833,27 @@ function sendAI() {
   var lower = msg.toLowerCase();
   var reply = '';
   if (lower.match(/cold|cough|flu|fever|runny|sore throat/)) {
-    reply = 'Based on your respiratory symptoms, I highly recommend the <b>Folk Remedies Compendium</b> 鈥?it contains 59 proven formulas for colds, coughs, and flu, including the famous Ginger-Sugar-Onion soup that has helped thousands!';
+    reply = 'Based on your respiratory symptoms, I highly recommend the <b>Folk Remedies Compendium</b> — it contains 59 proven formulas for colds, coughs, and flu, including the famous Ginger-Sugar-Onion soup that has helped thousands!';
   } else if (lower.match(/neck|shoulder|back|pain|joint|muscle|stiff/)) {
-    reply = 'For musculoskeletal concerns, the <b>Home Therapy Guide</b> is your best choice 鈥?it covers 52 therapeutic movements and 35 acupoint targeting techniques for pain relief and flexibility.';
+    reply = 'For musculoskeletal concerns, the <b>Home Therapy Guide</b> is your best choice — it covers 52 therapeutic movements and 35 acupoint targeting techniques for pain relief and flexibility.';
   } else if (lower.match(/stomach|digestion|appetite|digest|nausea|bloat|indigestion/)) {
     reply = 'Digestive issues? The <b>Folk Remedies Compendium</b> has excellent herbal formulas for stomach ailments. Also check the <b>Bencao Gangmu</b> for dietary therapy approaches to gut health!';
   } else if (lower.match(/eczema|skin|rash|acne|itch|dermatitis|allergy/)) {
     reply = 'Skin conditions are well-covered in the <b>Folk Remedies Compendium</b> with traditional herbal applications. The <b>Wellness Manual</b> also addresses skin health through seasonal dietary adjustments.';
   } else if (lower.match(/pressure|blood|hypertension|heart|cardio|cholesterol/)) {
     reply = 'For cardiovascular and blood pressure concerns, the <b>Folk Remedies Compendium</b> offers several time-tested herbal formulations and lifestyle adjustments that have been used for centuries.';
-  } else if (lower.match(/constitution|body type|浣撹川|qi|deficiency/)) {
+  } else if (lower.match(/constitution|body type|体质|qi|deficiency/)) {
     reply = 'To understand your unique constitution, the <b>Wellness Manual</b> provides a comprehensive 9-type system with personalized seasonal recipes and lifestyle recommendations for each type.';
   } else if (lower.match(/insomnia|sleep|tired|energy|fatigue|exhaust|rest/)) {
     reply = 'Sleep and energy issues? The <b>Folk Remedies Compendium</b> has calming herbal formulas. The <b>Huangdi Neijing</b> also explains the Meridian Clock for optimal sleep timing according to TCM theory.';
-  } else if (lower.match(/season|solar|鑺傛皵|summer|winter|spring|autumn|autumn/)) {
-    reply = 'The <b>Huangdi Neijing 路 Seasonal Wellness</b> is perfect for you! It maps all 24 solar terms to specific wellness practices using Five Elements theory 鈥?living in harmony with nature\'s rhythm.';
+  } else if (lower.match(/season|solar|节气|summer|winter|spring|autumn|autumn/)) {
+    reply = 'The <b>Huangdi Neijing · Seasonal Wellness</b> is perfect for you! It maps all 24 solar terms to specific wellness practices using Five Elements theory — living in harmony with nature\'s rhythm.';
   } else if (lower.match(/herb|food|diet|recipe|eat|nutrition|meal/)) {
-    reply = 'For dietary healing and nutrition therapy, the <b>Bencao Gangmu 路 Dietary Therapy</b> covers 365 medicinal ingredients and 200+ therapeutic recipes, matched to your specific constitution type!';
-  } else if (lower.match(/acupoint|meridian|massage|acupuncture|缁忕粶/)) {
-    reply = 'The <b>Home Therapy Guide</b> is ideal 鈥?it includes 35 key acupoint maps with precise locations and 52 therapeutic movements you can practice at home for self-care.';
+    reply = 'For dietary healing and nutrition therapy, the <b>Bencao Gangmu · Dietary Therapy</b> covers 365 medicinal ingredients and 200+ therapeutic recipes, matched to your specific constitution type!';
+  } else if (lower.match(/acupoint|meridian|massage|acupuncture|经络/)) {
+    reply = 'The <b>Home Therapy Guide</b> is ideal — it includes 35 key acupoint maps with precise locations and 52 therapeutic movements you can practice at home for self-care.';
   } else {
-    reply = 'Please describe your specific symptoms or health concerns in more detail 鈥?such as whether it relates to sleep, digestion, pain, skin, energy, or general wellness 鈥?and I\'ll recommend the most suitable volume from our collection.';
+    reply = 'Please describe your specific symptoms or health concerns in more detail — such as whether it relates to sleep, digestion, pain, skin, energy, or general wellness — and I\'ll recommend the most suitable volume from our collection.';
   }
   setTimeout(function() {
     msgArea.innerHTML += '<div class="ai-msg bot">' + reply + '</div>';
@@ -1877,6 +1877,6 @@ renderReviews();
 renderCart();
 </script>
 <!-- 51La Statistics -->
-<script charset="UTF-8" id="LA-DATA-WIDGET" crossorigin="anonymous" src="https://v6-widget.51.la/v6/19708078.js"></script>
+<script charset="UTF-8" id="LA-DATA-WIDGET" crossorigin="anonymous" src="https://v6-widget.51.la/v6/19708094.js"></script>
 </body>
 </html>
