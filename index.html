@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ancient Remedies - Eastern Wellness Wisdom</title>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Georgia', 'Palatino Linotype', 'Times New Roman', serif;
+  background: #0a0a0a;
+  color: #e0d8c8;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; color: inherit; transition: color 0.3s; }
+button { cursor: pointer; font-family: inherit; transition: all 0.3s ease; }
+img { max-width: 100%; }
+
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 64px;
+  backdrop-filter: blur(10px);
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-brand .logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: rgba(212, 175, 55, 0.05);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+.nav-brand .name {
+  color: #d4af37;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+.nav-links a {
+  color: #888;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.nav-links a:hover {
+  color: #d4af37;
+  border-bottom-color: rgba(212, 175, 55, 0.5);
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lang-btn {
+  background: none;
+  border: 1px solid #333;
+  color: #777;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+}
+.lang-btn.active {
+  border-color: #d4af37;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.12);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+}
+.lang-btn:hover {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+.cart-btn {
+  position: relative;
+  background: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 7px 18px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 8px;
+}
+.cart-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+.cart-badge {
+  background: #C8372D;
+  color: #fff;
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  display: none;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(200, 55, 45, 0.5);
+}
+
+/* ===== PROMO BANNER ===== */
+.promo-banner {
+  margin-top: 64px;
+  background: linear-gradient(90deg, #6B0000, #C8372D 30%, #D44A3D 50%, #C8372D 70%, #6B0000);
+  color: #fff;
+  text-align: center;
+  padding: 14px 50px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.promo-banner .close {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.3s;
+}
+.promo-banner .close:hover { color: #fff; }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: calc(100vh - 64px - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background: radial-gradient(ellipse at 50% 30%, #1c1c1c 0%, #111 40%, #0a0a0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="10" y="50" font-size="40" fill="rgba(212,175,55,0.02)" font-family="serif">道</text></svg>') repeat;
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, #0a0a0a, transparent);
+  pointer-events: none;
+}
+.hero h1 {
+  color: #d4af37;
+  font-size: 60px;
+  letter-spacing: 6px;
+  text-shadow: 0 0 60px rgba(212, 175, 55, 0.25), 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.hero .ornament {
+  color: rgba(212, 175, 55, 0.3);
+  font-size: 20px;
+  letter-spacing: 12px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.hero .subtitle {
+  color: #c9a84b;
+  font-size: 18px;
+  letter-spacing: 8px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.hero .desc {
+  color: #999;
+  max-width: 660px;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 44px;
+  position: relative;
+  z-index: 1;
+}
+.hero-ctas {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #C8372D 0%, #8B0000 100%);
+  color: #d4af37;
+  padding: 15px 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(200, 55, 45, 0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(200, 55, 45, 0.5);
+}
+.btn-outline {
+  background: none;
+  color: #d4af37;
+  padding: 15px 40px;
+  font-size: 15px;
+  border: 2px solid #d4af37;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.btn-outline:hover {
+  background: rgba(212, 175, 55, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+}
+
+/* ===== PRODUCTS ===== */
+.products-section {
+  padding: 100px 30px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-header h2 {
+  color: #d4af37;
+  font-size: 38px;
+  letter-spacing: 4px;
+  margin-bottom: 14px;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+}
+.section-header p {
+  color: #777;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.section-header .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.section-header .divider span {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+.section-header .divider .diamond {
+  color: #d4af37;
+  font-size: 10px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+.product-card {
+  background: linear-gradient(180deg, #151515 0%, #0d0d0d 100%);
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 28px 22px 22px;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--card-color, #d4af37), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.product-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(212, 175, 55, 0.05);
+}
+.product-card:hover::before { opacity: 1; }
+.card-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 12px;
+  padding: 3px 11px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+.tag-red { background: linear-gradient(135deg, #C8372D, #8B0000); }
+.tag-purple { background: linear-gradient(135deg, #9B4DCA, #6A2C91); }
+.tag-orange { background: linear-gradient(135deg, #E8A020, #C4850A); }
+.tag-yellow { background: linear-gradient(135deg, #D4B427, #A88E0C); color: #111; }
+.tag-green { background: linear-gradient(135deg, #3DA854, #1E7A35); }
+.card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #d4af37, #b8922a);
+  color: #111;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.card-icon {
+  width: 68px;
+  height: 68px;
+  margin: 20px auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.03);
+  transition: all 0.4s;
+}
+.product-card:hover .card-icon {
+  border-color: #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+.product-card h3 {
+  color: #d4af37;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 3px;
+  letter-spacing: 0.5px;
+}
+.product-card .sub {
+  color: #777;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.product-card .desc {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  min-height: 62px;
+}
+.card-tags {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.card-tags span {
+  font-size: 10px;
+  padding: 3px 9px;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  color: #888;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.3s;
+}
+.product-card:hover .card-tags span {
+  border-color: #333;
+  color: #aaa;
+}
+.price-row {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.price-row .current {
+  color: #d4af37;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+.price-row .old {
+  color: #555;
+  text-decoration: line-through;
+  font-size: 13px;
+  margin-left: 8px;
+}
+.add-cart-btn {
+  width: 100%;
+  padding: 11px;
+  background: none;
+  border: 1px solid #C8372D;
+  color: #C8372D;
+  font-size: 13px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.add-cart-btn:hover {
+  background: linear-gradient(135deg, #C8372D, #8B0000);
+  color: #d4af37;
+  box-shadow: 0 4px 15px rgba(200, 55, 45, 0.3);
+}
+
+/* ===== REVIEWS ===== */
+.reviews-section {
+  padding: 100px 30px;
+  background: linear-gradient(180deg, #0c0c0c 0%, #0a0a0a 100%);
+}
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.stat-item { text-align: center; }
+.stat-item .num {
+  color: #d4af37;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+.stat-item .label {
+  color: #777;
+  font-size: 12px;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.review-card {
+  background: linear-gradient(180deg, #141414 0%, #0e0e0e 100%);
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: all 0.4s;
+  position: relative;
+}
+.review-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 60px;
+  color: rgba(212, 175, 55, 0.06);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.review-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+.review-card .stars {
+  color: #d4af37;
+  font-size: 13px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.review-card .name {
+  color: #d4af37;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.review-card .loc {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.review-card .text {
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+.review-card .purchased {
+  color: #777;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.review-card .purchased b {
+  color: #c9a84b;
+}
+.more-reviews {
+  text-align: center;
+  margin-top: 36px;
+  color: #d4af37;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+.more-reviews:hover { color: #f0d060; }
+
+/* ===== ABOUT ===== */
+.about-section {
+  padding: 100px 30px;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-section h2 {
+  color: #d4af37;
+  font-size: 34px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.about-section .text {
+  color: #999;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+.contact-info {
+  color: #c9a84b;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.5px;
+}
+.contact-info div::before {
+  content: '◎ ';
+  color: rgba(212, 175, 55, 0.5);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 40px 30px;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  line-height: 2;
+  background: #080808;
+}
+footer .disclaimer {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #444;
+  font-size: 11px;
+}
+
+/* ===== CART MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+.modal-overlay.open { display: flex; }
+.cart-modal {
+  background: linear-gradient(180deg, #161616 0%, #0e0e0e 100%);
+  border: 2px solid #d4af37;
+  border-radius: 14px;
+  width: 540px;
+  max-height: 80vh;
+  overflow: auto;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(212, 175, 55, 0.08);
+}
+.cart-modal h2 {
+  color: #d4af37;
+  font-size: 22px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 1px;
+}
+.cart-modal .close-modal {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  line-height: 1;
+}
+.cart-modal .close-modal:hover { color: #d4af37; }
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+.cart-item:last-child { border-bottom: none; }
+.cart-item .color-bar {
+  width: 4px;
+  height: 52px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.cart-item .item-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #d4af37;
+  flex-shrink: 0;
+}
+.cart-item .item-info { flex: 1; min-width: 0; }
+.cart-item .item-info .item-name {
+  color: #e0d8c8;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cart-item .item-info .item-name .mini-tag {
+  font-size: 9px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.cart-item .item-info .item-price {
+  color: #d4af37;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.qty-control button {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #d4af37;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qty-control button:hover { background: #222; border-color: #d4af37; }
+.qty-control span {
+  color: #ccc;
+  font-size: 14px;
+  min-width: 22px;
+  text-align: center;
+}
+.cart-item .del-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: color 0.3s;
+}
+.cart-item .del-btn:hover { color: #C8372D; }
+.cart-empty {
+  text-align: center;
+  color: #555;
+  padding: 50px 20px;
+  font-size: 15px;
+}
+.cart-footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding-top: 24px;
+}
+.cart-total {
+  color: #d4af37;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+.checkout-btn {
+  background: linear-gradient(135deg, #C8372D 0%, #8B0000 100%);
+  color: #d4af37;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 20px rgba(200, 55, 45, 0.3);
+}
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(200, 55, 45, 0.5);
+}
+
+/* ===== PAYMENT MODAL ===== */
+.pay-modal {
+  background: linear-gradient(180deg, #161616 0%, #0e0e0e 100%);
+  border: 2px solid #d4af37;
+  border-radius: 14px;
+  width: 460px;
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(212, 175, 55, 0.08);
+}
+.pay-modal h2 {
+  color: #d4af37;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.pay-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.pay-tab {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+.pay-tab.active {
+  background: #d4af37;
+  color: #111;
+}
+.pay-tab:not(.active):hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #d4af37;
+}
+.pay-qr {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 18px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+}
+.pay-qr img { width: 100%; height: 100%; object-fit: contain; }
+.pay-amount {
+  color: #d4af37;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+.pay-tip {
+  color: #888;
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+.pay-back {
+  background: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.pay-back:hover {
+  background: rgba(212, 175, 55, 0.08);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+}
+
+/* ===== AI ASSISTANT ===== */
+.ai-fab {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #0a0a0a;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.25);
+  transition: all 0.3s;
+  animation: fabPulse 3s ease-in-out infinite;
+}
+@keyframes fabPulse {
+  0%, 100% { box-shadow: 0 6px 25px rgba(212, 175, 55, 0.25); }
+  50% { box-shadow: 0 6px 35px rgba(212, 175, 55, 0.45); }
+}
+.ai-fab:hover {
+  transform: scale(1.1);
+  animation: none;
+  box-shadow: 0 8px 40px rgba(212, 175, 55, 0.5);
+}
+.ai-panel {
+  position: fixed;
+  bottom: 96px;
+  right: 28px;
+  width: 360px;
+  max-height: 500px;
+  background: linear-gradient(180deg, #151515 0%, #0e0e0e 100%);
+  border: 2px solid #d4af37;
+  border-radius: 14px;
+  z-index: 1500;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.08);
+}
+.ai-panel.open { display: flex; }
+.ai-panel .ai-head {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ai-panel .ai-head h3 {
+  color: #d4af37;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.ai-panel .ai-head .close-ai {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.ai-panel .ai-head .close-ai:hover { color: #d4af37; }
+.ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  max-height: 360px;
+}
+.ai-msg {
+  margin-bottom: 14px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 88%;
+  word-wrap: break-word;
+}
+.ai-msg.bot {
+  background: #1a1a1a;
+  color: #ccc;
+  margin-right: auto;
+  border: 1px solid #222;
+}
+.ai-msg.user {
+  background: rgba(212, 175, 55, 0.1);
+  color: #d4af37;
+  margin-left: auto;
+  text-align: right;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+.ai-input-row {
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  background: #0c0c0c;
+}
+.ai-input-row input {
+  flex: 1;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  color: #e0d8c8;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.ai-input-row input:focus { border-color: #d4af37; }
+.ai-input-row button {
+  background: linear-gradient(135deg, #d4af37, #b8922a);
+  border: none;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 14px; height: 56px; }
+  .nav-brand .name { font-size: 15px; }
+  .nav-links { display: none; }
+  .lang-btn { padding: 3px 7px; font-size: 10px; }
+  .cart-btn { padding: 5px 12px; font-size: 12px; }
+  .promo-banner { padding: 10px 40px; font-size: 12px; margin-top: 56px; }
+  .hero h1 { font-size: 34px; letter-spacing: 3px; }
+  .hero .subtitle { font-size: 13px; letter-spacing: 4px; }
+  .hero .desc { font-size: 14px; }
+  .products-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .stats-bar { gap: 24px; }
+  .cart-modal, .pay-modal { width: 94vw; padding: 24px; }
+  .ai-panel { width: calc(100vw - 48px); right: 24px; }
+  .ai-fab { width: 50px; height: 50px; font-size: 22px; bottom: 20px; right: 20px; }
+  .ai-panel { bottom: 80px; right: 20px; }
+}
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 28px; }
+}
+
+/* RTL support */
+body[dir="rtl"] .ai-fab { right: auto; left: 28px; }
+body[dir="rtl"] .ai-panel { right: auto; left: 28px; }
+body[dir="rtl"] .cart-item .del-btn { margin-left: 0; margin-right: auto; }
+body[dir="rtl"] .promo-banner .close { right: auto; left: 18px; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-brand">
+    <span class="logo">古</span>
+    <span class="name" data-i18n="brand">Ancient Remedies</span>
+  </div>
+  <div class="nav-links">
+    <a href="#home" data-i18n="nav_home">Home</a>
+    <a href="#products" data-i18n="nav_products">Collection</a>
+    <a href="#reviews" data-i18n="nav_reviews">Testimonials</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+  </div>
+  <div class="nav-right">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('zh')">中</button>
+    <button class="lang-btn" onclick="setLang('ja')">日</button>
+    <button class="lang-btn" onclick="setLang('ko')">한</button>
+    <button class="lang-btn" onclick="setLang('de')">DE</button>
+    <button class="lang-btn" onclick="setLang('fr')">FR</button>
+    <button class="lang-btn" onclick="setLang('ar')">ع</button>
+    <button class="cart-btn" onclick="toggleCart()">
+      🛒 <span data-i18n="cart_label">Cart</span>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== PROMO BANNER ===== -->
+<div class="promo-banner" id="promoBanner">
+  <span data-i18n="promo_text">🔥 Limited Offer · 50% Off All Volumes · Ends June 30, 2026</span>
+  <span class="close" onclick="closePromo()">✕</span>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="ornament">◆ ◇ ◆</div>
+  <h1 data-i18n="hero_title">Ancient Remedies</h1>
+  <div class="subtitle" data-i18n="hero_subtitle">Eastern Wellness Wisdom · Thousand-Year Heritage</div>
+  <p class="desc" data-i18n="hero_desc">Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature — your journey to holistic health begins here.</p>
+  <div class="hero-ctas">
+    <a href="#products" class="btn-primary" data-i18n="hero_cta1">Explore Collection</a>
+    <button class="btn-outline" onclick="openAI()" data-i18n="hero_cta2">Ask the Oracle</button>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="products-section" id="products">
+  <div class="section-header">
+    <h2 data-i18n="products_title">The Collection</h2>
+    <p data-i18n="products_desc">Five volumes of Eastern wellness wisdom, each a gateway to ancient healing traditions.</p>
+    <div class="divider">
+      <span></span>
+      <span class="diamond">◆</span>
+      <span></span>
+    </div>
+  </div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews-section" id="reviews">
+  <div class="section-header">
+    <h2 data-i18n="reviews_title">Testimonials</h2>
+    <p data-i18n="reviews_desc">Voices from around the world who have experienced the wisdom of ancient healing.</p>
+    <div class="divider">
+      <span></span>
+      <span class="diamond">◆</span>
+      <span></span>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="num" data-i18n="stat_rating">⭐ 4.8/5.0</div>
+      <div class="label" data-i18n="stat_reviewers">12,847 Global Reviews</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">97%</div>
+      <div class="label" data-i18n="stat_recommend">Recommend</div>
+    </div>
+  </div>
+  <div class="reviews-grid" id="reviewsGrid"></div>
+  <div class="more-reviews" data-i18n="review_more">More Reviews ▸</div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section" id="about">
+  <h2 data-i18n="about_title">About Ancient Remedies</h2>
+  <p class="text" data-i18n="about_text">Ancient Remedies is dedicated to preserving and sharing the profound wellness wisdom of Eastern civilization. Our volumes distill thousands of years of traditional Chinese medicine, seasonal wellness practices, and herbal knowledge into accessible, beautifully crafted references for the modern seeker of holistic health. Each book is a bridge between ancient tradition and contemporary wellness, meticulously researched and elegantly presented.</p>
+  <div class="contact-info">
+    <div>WeChat: 18059536178</div>
+    <div>Email: hotskr01@gmail.com</div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="disclaimer" data-i18n="disclaimer">Disclaimer: These books are for educational and reference purposes only. They do not constitute medical advice. The information contained herein should not be used as a substitute for professional medical diagnosis or treatment. Please consult a qualified healthcare professional before beginning any health regimen or using any remedies described in these volumes.</div>
+  <div data-i18n="copyright">© 2026 Ancient Remedies. All rights reserved.</div>
+</footer>
+
+<!-- ===== CART MODAL ===== -->
+<div class="modal-overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()">
+  <div class="cart-modal">
+    <span class="close-modal" onclick="closeCart()">✕</span>
+    <h2 data-i18n="cart_title">Scroll Bag 🛒</h2>
+    <div id="cartItems"></div>
+    <div id="cartEmpty" class="cart-empty" data-i18n="cart_empty">Your bag is empty. Explore our collection to begin your wellness journey!</div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total"><span data-i18n="cart_total">Total</span>: $<span id="cartTotalPrice">0.0</span></div>
+      <button class="checkout-btn" onclick="openPayment()" data-i18n="checkout">Checkout ♦</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAYMENT MODAL ===== -->
+<div class="modal-overlay" id="payOverlay" onclick="if(event.target===this)closePayment()">
+  <div class="pay-modal">
+    <h2 data-i18n="pay_title">Scan to Pay</h2>
+    <div class="pay-tabs">
+      <button class="pay-tab active" onclick="switchPay('wechat')" data-i18n="pay_wechat">WeChat Pay</button>
+      <button class="pay-tab" onclick="switchPay('alipay')" data-i18n="pay_alipay">Alipay</button>
+    </div>
+    <div class="pay-qr" id="payQR"><img src="img/wechat-qr.png" alt="WeChat QR Code"></div>
+    <div class="pay-amount">$<span id="payAmount">0.0</span></div>
+    <div class="pay-tip" data-i18n="pay_tip">1. Open WeChat or Alipay on your phone<br>2. Scan the QR code displayed above<br>3. Enter the payment amount shown<br>4. Confirm and complete your payment</div>
+    <button class="pay-back" onclick="closePayment()" data-i18n="pay_back">Continue Shopping</button>
+  </div>
+</div>
+
+<!-- ===== AI ASSISTANT ===== -->
+<button class="ai-fab" onclick="toggleAI()">🧬</button>
+<div class="ai-panel" id="aiPanel">
+  <div class="ai-head">
+    <h3>🧬 <span data-i18n="ai_title">Wellness Oracle</span></h3>
+    <span class="close-ai" onclick="toggleAI()">✕</span>
+  </div>
+  <div class="ai-messages" id="aiMessages">
+    <div class="ai-msg bot" data-i18n="ai_welcome">Hello! I am the Wellness Oracle. Describe your symptoms or health needs, and I will recommend the right volume from our collection to guide you on your healing journey.</div>
+  </div>
+  <div class="ai-input-row">
+    <input id="aiInput" data-i18n-placeholder="ai_placeholder" placeholder="Describe your symptoms or health needs..." onkeydown="if(event.key==='Enter')sendAI()">
+    <button onclick="sendAI()" data-i18n="ai_send">Send</button>
+  </div>
+</div>
+
+<script>
+// ===================== PRODUCT DATA =====================
+var products = [
+  {
+    id: 'pf', icon: '方', tag: '方', tagClass: 'tag-red',
+    price: 9.9, oldPrice: 19.8, badge: 'sale_50',
+    color: '#C8372D',
+    keys: { name: 'pf_name', sub: 'pf_sub', desc: 'pf_desc', tag1: 'pf_tag1', tag2: 'pf_tag2', tag3: 'pf_tag3' }
+  },
+  {
+    id: 'll', icon: '理', tag: '理', tagClass: 'tag-purple',
+    price: 13.9, oldPrice: 27.8, badge: 'sale_50',
+    color: '#7B2D8E',
+    keys: { name: 'll_name', sub: 'll_sub', desc: 'll_desc', tag1: 'll_tag1', tag2: 'll_tag2', tag3: 'll_tag3' }
+  },
+  {
+    id: 'ys', icon: '养', tag: '养', tagClass: 'tag-orange',
+    price: 16.9, oldPrice: 33.8, badge: 'sale_50',
+    color: '#D4830A',
+    keys: { name: 'ys_name', sub: 'ys_sub', desc: 'ys_desc', tag1: 'ys_tag1', tag2: 'ys_tag2', tag3: 'ys_tag3' }
+  },
+  {
+    id: 'hd', icon: '黄', tag: '黄', tagClass: 'tag-yellow',
+    price: 29.8, oldPrice: 59.9, badge: 'sale_limited',
+    color: '#B8960C',
+    keys: { name: 'hd_name', sub: 'hd_sub', desc: 'hd_desc', tag1: 'hd_tag1', tag2: 'hd_tag2', tag3: 'hd_tag3' }
+  },
+  {
+    id: 'bc', icon: '草', tag: '草', tagClass: 'tag-green',
+    price: 26.8, oldPrice: 53.9, badge: 'sale_limited',
+    color: '#2D8E3E',
+    keys: { name: 'bc_name', sub: 'bc_sub', desc: 'bc_desc', tag1: 'bc_tag1', tag2: 'bc_tag2', tag3: 'bc_tag3' }
+  }
+];
+
+// ===================== I18N TRANSLATIONS =====================
+var T = {
+en: {
+  brand: 'Ancient Remedies',
+  nav_home: 'Home', nav_products: 'Collection', nav_reviews: 'Testimonials', nav_about: 'About',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: 'Eastern Wellness Wisdom · Thousand-Year Heritage',
+  hero_desc: 'Discover the healing secrets passed down through millennia. From folk remedies recorded in ancient texts to seasonal wellness routines aligned with the rhythm of nature — your journey to holistic health begins here.',
+  hero_cta1: 'Explore Collection', hero_cta2: 'Ask the Oracle',
+  products_title: 'The Collection',
+  products_desc: 'Five volumes of Eastern wellness wisdom, each a gateway to ancient healing traditions.',
+  pf_name: 'Folk Remedies Compendium', pf_sub: '偏方大全',
+  pf_desc: '59 time-tested formulas across 8 body systems, each with original source citations and modern usage notes. A treasure trove of grandmother\'s wisdom.',
+  pf_tag1: '59 Formulas', pf_tag2: '8 Systems', pf_tag3: 'With Sources',
+  ll_name: 'Home Therapy Guide', ll_sub: '理療指南',
+  ll_desc: '52 therapeutic movements, 35 key acupoint maps, covering 6 major body areas with step-by-step illustrations and self-care techniques.',
+  ll_tag1: '52 Movements', ll_tag2: '35 Acupoints', ll_tag3: '6 Areas',
+  ys_name: 'Wellness Manual', ys_sub: '養生手冊',
+  ys_desc: '108 seasonal recipes across 9 constitution types, with personalized wellness plans for every season. Eat your way to vitality.',
+  ys_tag1: '108 Recipes', ys_tag2: '9 Types', ys_tag3: 'Seasonal Plans',
+  hd_name: 'Huangdi Neijing · Seasonal Wellness', hd_sub: '黃帝內經',
+  hd_desc: '24 solar term wellness guide based on Five Elements theory and the Meridian Clock — the crown jewel of traditional Chinese medicine wisdom.',
+  hd_tag1: '24 Solar Terms', hd_tag2: 'Five Elements', hd_tag3: 'Meridian Clock',
+  bc_name: 'Bencao Gangmu · Dietary Therapy', bc_sub: '本草綱目',
+  bc_desc: '365 medicinal ingredients, 200+ therapeutic recipes, matched to your constitution type for personalized dietary healing and nourishment.',
+  bc_tag1: '365 Ingredients', bc_tag2: '200+ Recipes', bc_tag3: 'Constitution Match',
+  badge_hot: 'HOT', badge_rec: 'RECOMMENDED', badge_treasure: 'TREASURE', badge_classic: 'CLASSIC', badge_herbal: 'HERBAL',
+  sale_50: '50% OFF', sale_limited: 'LIMITED', sale_days_left: 'Ends Soon',
+  add_cart: 'Add to Cart', cart_label: 'Cart', cart_title: 'Scroll Bag 🛒',
+  cart_empty: 'Your bag is empty. Explore our collection to begin your wellness journey!',
+  cart_total: 'Total', checkout: 'Checkout ♦',
+  reviews_title: 'Testimonials',
+  reviews_desc: 'Voices from around the world who have experienced the wisdom of ancient healing.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 Global Reviews', stat_recommend: 'Recommend',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'USA',
+  rv1_text: '"Ginger-Sugar-Onion soup cured my cold in 2 days. My grandmother would be so proud — her remedies really work!"',
+  rv1_purchased: 'Compendium',
+  rv2_name: 'Wang Fang', rv2_loc: 'Canada',
+  rv2_text: '"The acupoint charts in the Therapy Guide are incredibly practical! I use them every morning as part of my daily routine."',
+  rv2_purchased: 'Guide',
+  rv3_name: 'David Chen', rv3_loc: 'UK',
+  rv3_text: '"The constitution test showed I was Qi-deficient. I followed the herbal recipes for 3 months and my energy levels completely transformed."',
+  rv3_purchased: 'Wellness Manual',
+  rv4_name: 'Wei Zhang', rv4_loc: 'Australia',
+  rv4_text: '"Bought all five volumes. My overall health has noticeably improved in just 3 months of following the practices!"',
+  rv4_purchased: 'Complete Set',
+  review_more: 'More Reviews ▸',
+  promo_text: '🔥 Limited Offer · 50% Off All Volumes · Ends June 30, 2026',
+  about_title: 'About Ancient Remedies',
+  about_text: 'Ancient Remedies is dedicated to preserving and sharing the profound wellness wisdom of Eastern civilization. Our volumes distill thousands of years of traditional Chinese medicine, seasonal wellness practices, and herbal knowledge into accessible, beautifully crafted references for the modern seeker of holistic health. Each book is a bridge between ancient tradition and contemporary wellness, meticulously researched and elegantly presented.',
+  disclaimer: 'Disclaimer: These books are for educational and reference purposes only. They do not constitute medical advice. The information contained herein should not be used as a substitute for professional medical diagnosis or treatment. Please consult a qualified healthcare professional before beginning any health regimen or using any remedies described in these volumes.',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
+  pay_title: 'Scan to Pay', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. Open WeChat or Alipay on your phone<br>2. Scan the QR code displayed above<br>3. Enter the payment amount shown<br>4. Confirm and complete your payment',
+  pay_back: 'Continue Shopping',
+  ai_title: 'Wellness Oracle', ai_send: 'Send',
+  ai_welcome: 'Hello! I am the Wellness Oracle. Describe your symptoms or health needs, and I will recommend the right volume from our collection to guide you on your healing journey.',
+  ai_placeholder: 'Describe your symptoms or health needs...',
+  remove: 'Remove',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+zh: {
+  brand: '古方养生',
+  nav_home: '首页', nav_products: '典藏', nav_reviews: '评价', nav_about: '关于',
+  hero_title: '古方养生',
+  hero_subtitle: '东方养生智慧 · 千年传承',
+  hero_desc: '探索传承千年的养生秘方。从古籍记载的民间偏方到顺应自然节律的四季养生——你的全息健康之旅从此开始。每一部典籍都是连接古今智慧的桥梁。',
+  hero_cta1: '浏览典藏', hero_cta2: '问诊神谕',
+  products_title: '典藏系列',
+  products_desc: '五部东方养生智慧典籍，每一部都是通往古代疗愈传统的大门。',
+  pf_name: '民间偏方大全', pf_sub: 'Folk Remedies',
+  pf_desc: '收录59个经过岁月验证的偏方，覆盖8大身体系统，附原始出处引用和现代用法详解。一本值得珍藏的祖母智慧宝库。',
+  pf_tag1: '59方剂', pf_tag2: '8系统', pf_tag3: '附出处',
+  ll_name: '家庭理疗指南', ll_sub: 'Home Therapy',
+  ll_desc: '52个理疗动作，35个关键穴位图解，覆盖6大身体部位，附分步图示和自我保健技巧，简单易学。',
+  ll_tag1: '52动作', ll_tag2: '35穴位', ll_tag3: '6部位',
+  ys_name: '四季养生手册', ys_sub: 'Wellness Manual',
+  ys_desc: '108道季节食方，覆盖9种体质类型，为每个季节提供个性化养生方案。吃出健康，养出活力。',
+  ys_tag1: '108食谱', ys_tag2: '9体质', ys_tag3: '四季方案',
+  hd_name: '黄帝内经·节气养生', hd_sub: 'Huangdi Neijing',
+  hd_desc: '基于五行理论和经络时钟的24节气养生指南——中医智慧的皇冠明珠，顺应天时调养身心。',
+  hd_tag1: '24节气', hd_tag2: '五行', hd_tag3: '经络时钟',
+  bc_name: '本草纲目·食疗养生', bc_sub: 'Bencao Gangmu',
+  bc_desc: '365种药用食材，200+食疗配方，精准匹配你的体质类型进行个性化食疗调理和滋补养生。',
+  bc_tag1: '365味药材', bc_tag2: '200+配方', bc_tag3: '体质匹配',
+  badge_hot: '热销', badge_rec: '推荐', badge_treasure: '珍品', badge_classic: '经典', badge_herbal: '本草',
+  sale_50: '5折优惠', sale_limited: '限量发售', sale_days_left: '即将截止',
+  add_cart: '加入书袋', cart_label: '购物车', cart_title: '书袋 🛒',
+  cart_empty: '你的书袋是空的，快去浏览典藏开启你的养生之旅吧！',
+  cart_total: '合计', checkout: '结算 ♦',
+  reviews_title: '读者评价',
+  reviews_desc: '来自世界各地读者的真实反馈与好评。',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847条全球评价', stat_recommend: '推荐率',
+  rv1_name: '李明远', rv1_loc: '美国',
+  rv1_text: '"姜糖葱汤两天就治好了我的感冒。奶奶一定会很骄傲——她的方子真的管用！"',
+  rv1_purchased: '偏方大全',
+  rv2_name: '王芳', rv2_loc: '加拿大',
+  rv2_text: '"理疗指南里的穴位图解太实用了！我现在每天早上都会按照图示做一套 routines。"',
+  rv2_purchased: '理疗指南',
+  rv3_name: '陈大卫', rv3_loc: '英国',
+  rv3_text: '"体质测试显示我是气虚体质。按照养生手册的草药食谱调理了3个月，精力完全不同了。"',
+  rv3_purchased: '养生手册',
+  rv4_name: '张伟', rv4_loc: '澳大利亚',
+  rv4_text: '"五本全买了。坚持了3个月的养生实践，整体健康状况明显改善！"',
+  rv4_purchased: '全套典藏',
+  review_more: '更多评价 ▸',
+  promo_text: '🔥 限时优惠 · 全场五折 · 2026年6月30日截止',
+  about_title: '关于古方养生',
+  about_text: '古方养生致力于保护和传承东方文明的深邃养生智慧。我们的典籍将数千年的中医、四季养生和草药知识提炼为易于获取、精美制作的现代参考读物。每一本书都是连接古今的桥梁，经过精心研究和优雅呈现。',
+  disclaimer: '免责声明：本书仅供教育和参考用途，不构成医疗建议。书中所含信息不应替代专业医疗诊断或治疗。在开始任何养生方案或使用书中所述任何方剂之前，请咨询合格的医疗专业人士。',
+  copyright: '© 2026 古方养生 版权所有',
+  pay_title: '扫码支付', pay_wechat: '微信支付', pay_alipay: '支付宝',
+  pay_tip: '1. 打开手机上的微信或支付宝<br>2. 扫描上方显示的二维码<br>3. 输入显示的支付金额<br>4. 确认并完成支付',
+  pay_back: '继续购物',
+  ai_title: '养生神谕', ai_send: '发送',
+  ai_welcome: '你好！我是养生神谕。请描述你的症状或健康需求，我会为你推荐最合适的典籍，指引你的疗愈之旅。',
+  ai_placeholder: '描述你的症状或健康需求...',
+  remove: '移除',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+ja: {
+  brand: '古方養生堂',
+  nav_home: 'ホーム', nav_products: 'コレクション', nav_reviews: 'レビュー', nav_about: '概要',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: '東洋養生の知恵 · 千年の遺産',
+  hero_desc: '何千年も受け継がれてきた癒しの秘密を発見しましょう。古代の文献に記された民間療法から、自然のリズムに合わせた季節の養生法まで。あなたのホリスティック健康への旅はここから始まります。',
+  hero_cta1: 'コレクションを見る', hero_cta2: '神託に聞く',
+  products_title: 'コレクション',
+  products_desc: '5冊の東洋養生の知恵の書。それぞれが古代の癒しの伝統への入り口です。',
+  pf_name: '民間療法大全', pf_sub: '偏方大全',
+  pf_desc: '8つの身体系統にわたる59の検証済み処方。出典と現代の用法を記載した、おばあちゃんの知恵の宝庫。',
+  pf_tag1: '59処方', pf_tag2: '8系統', pf_tag3: '出典付き',
+  ll_name: '家庭療法ガイド', ll_sub: '理療指南',
+  ll_desc: '52の治療動作、35の経穴マップ、6つの主要身体部位を網羅。ステップバイステップの図解付き。',
+  ll_tag1: '52動作', ll_tag2: '35経穴', ll_tag3: '6部位',
+  ys_name: '養生マニュアル', ys_sub: '養生手册',
+  ys_desc: '9つの体質タイプ別108の季節レシピ。各季節のパーソナライズされた養生計画で食から健康を。',
+  ys_tag1: '108レシピ', ys_tag2: '9タイプ', ys_tag3: '季節計画',
+  hd_name: '黄帝内経・季節養生', hd_sub: '黄帝内经',
+  hd_desc: '五行理論と経絡時計に基づく24節気養生ガイド——中医学の至宝。自然のリズムに合わせた健康法。',
+  hd_tag1: '24節気', hd_tag2: '五行', hd_tag3: '経絡時計',
+  bc_name: '本草綱目・食療養生', bc_sub: '本草纲目',
+  bc_desc: '365種の生薬材料、200以上の食療レシピ。体質に合わせたパーソナライズされた食事療法。',
+  bc_tag1: '365材料', bc_tag2: '200+レシピ', bc_tag3: '体質マッチ',
+  badge_hot: '人気', badge_rec: 'おすすめ', badge_treasure: '至宝', badge_classic: '古典', badge_herbal: '本草',
+  sale_50: '50%OFF', sale_limited: '限定版', sale_days_left: '間もなく終了',
+  add_cart: 'カートに追加', cart_label: 'カート', cart_title: 'カート 🛒',
+  cart_empty: 'カートは空です。コレクションを見て養生の旅を始めましょう！',
+  cart_total: '合計', checkout: 'お支払い ♦',
+  reviews_title: 'レビュー',
+  reviews_desc: '世界中の体験者の声。古代の癒しの知恵を体験した方々の感想。',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847件のグローバルレビュー', stat_recommend: 'おすすめ率',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'アメリカ',
+  rv1_text: '"生姜砂糖ネギスープで2日で風邪が治りました。おばあちゃんが誇りに思うはず——彼女の疗法は本当に効きます！"',
+  rv1_purchased: '大全',
+  rv2_name: 'Wang Fang', rv2_loc: 'カナダ',
+  rv2_text: '"療法ガイドの経穴図がとても実用的です！毎朝のルーティンに取り入れています。"',
+  rv2_purchased: 'ガイド',
+  rv3_name: 'David Chen', rv3_loc: 'イギリス',
+  rv3_text: '"体質テストで気虚と判明。3ヶ月間薬草レシピに従ったらエネルギーレベルが完全に変わりました。"',
+  rv3_purchased: 'マニュアル',
+  rv4_name: 'Wei Zhang', rv4_loc: 'オーストラリア',
+  rv4_text: '"5冊全部購入。3ヶ月で全体的な健康が明らかに改善しました！"',
+  rv4_purchased: '全セット',
+  review_more: 'レビューをもっと見る ▸',
+  promo_text: '🔥 限定オファー · 全巻50%OFF · 2026年6月30日まで',
+  about_title: 'Ancient Remediesについて',
+  about_text: 'Ancient Remediesは東洋文明の深い養生の知恵を保護し共有することに専念しています。各巻は古代の伝統と現代のウェルネスを結ぶ架け橋です。',
+  disclaimer: '免責事項：本書は教育および参考目的のみです。医療のアドバイスを構成するものではありません。健康計画を開始する前に、専門の医療従事者にご相談ください。',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
+  pay_title: 'スキャンして支払う', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. スマホでWeChatまたはAlipayを開く<br>2. 上記のQRコードをスキャン<br>3. 表示された金額を入力<br>4. 確認して支払いを完了',
+  pay_back: '買い物を続ける',
+  ai_title: '養生オラクル', ai_send: '送信',
+  ai_welcome: 'こんにちは！私は養生オラクルです。症状や健康のニーズを教えてください。最適な一冊をお勧めします。',
+  ai_placeholder: '症状や健康のニーズを入力...',
+  remove: '削除',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+ko: {
+  brand: '고방양생',
+  nav_home: '홈', nav_products: '컬렉션', nav_reviews: '후기', nav_about: '소개',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: '동양 양생 지혜 · 천년 유산',
+  hero_desc: '수천 년간 전해 내려온 치유의 비밀을 발견하세요. 고대 문헌에 기록된 민간 요법부터 자연의 리듬에 맞춘 계절 양생법까지. 당신의 전체적인 건강 여정은 여기서 시작됩니다.',
+  hero_cta1: '컬렉션 탐색', hero_cta2: '신탁에 묻기',
+  products_title: '컬렉션',
+  products_desc: '5권의 동양 양생 지혜 서적, 각 권은 고대 치유 전통으로의 문입니다.',
+  pf_name: '민간 처방 대전', pf_sub: '偏方大全',
+  pf_desc: '8개 신체 시스템의 59개 검증된 처방. 원문 출처와 현대 용법을 수록한 할머니의 지혜 보물창고.',
+  pf_tag1: '59 처방', pf_tag2: '8 시스템', pf_tag3: '출처 수록',
+  ll_name: '가정 치료 가이드', ll_sub: '理療指南',
+  ll_desc: '52개 치료 동작, 35개 경혈 지도, 6개 주요 신체 부위 포함. 단계별 삽화와 자가 관리 기법.',
+  ll_tag1: '52 동작', ll_tag2: '35 경혈', ll_tag3: '6 부위',
+  ys_name: '양생 매뉴얼', ys_sub: '養生手册',
+  ys_desc: '9가지 체질 유형별 108개 계절 레시피. 매 계절 맞춤 양생 계획으로 음식으로 건강을!',
+  ys_tag1: '108 레시피', ys_tag2: '9 유형', ys_tag3: '계절 계획',
+  hd_name: '황제내경 · 절기 양생', hd_sub: '黃帝內經',
+  hd_desc: '오행 이론과 경락 시계 기반 24절기 양생 가이드 — 중의학 지혜의 왕관 보석.',
+  hd_tag1: '24 절기', hd_tag2: '오행', hd_tag3: '경락 시계',
+  bc_name: '본초강목 · 식이 요법', bc_sub: '本草綱目',
+  bc_desc: '365가지 약재, 200개 이상 식이요법 레시피. 체질에 맞춘 개인화된 식이 치료와 영양 보충.',
+  bc_tag1: '365 약재', bc_tag2: '200+ 레시피', bc_tag3: '체질 매치',
+  badge_hot: '인기', badge_rec: '추천', badge_treasure: '진품', badge_classic: '고전', badge_herbal: '본초',
+  sale_50: '50% 할인', sale_limited: '한정판', sale_days_left: '마감 임박',
+  add_cart: '장바구니에 추가', cart_label: '장바구니', cart_title: '장바구니 🛒',
+  cart_empty: '장바구니가 비어 있습니다. 컬렉션을 탐색하고 양생 여정을 시작하세요!',
+  cart_total: '합계', checkout: '결제 ♦',
+  reviews_title: '후기',
+  reviews_desc: '전 세계 사용자들의 목소리. 고대 치유의 지혜를 경험한 분들의 생생한 후기.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 글로벌 리뷰', stat_recommend: '추천율',
+  rv1_name: 'Li Mingyuan', rv1_loc: '미국',
+  rv1_text: '"생강 설탕 파 수프로 2일 만에 감기가 나았습니다. 할머니가 자랑스러워하실 거예요 — 정말 효과가 있어요!"',
+  rv1_purchased: '대전',
+  rv2_name: 'Wang Fang', rv2_loc: '캐나다',
+  rv2_text: '"치료 가이드의 경혈 지도가 정말 실용적이에요! 매일 아침 루틴으로 사용하고 있어요."',
+  rv2_purchased: '가이드',
+  rv3_name: 'David Chen', rv3_loc: '영국',
+  rv3_text: '"체질 테스트에서 기허으로 나왔습니다. 3개월간 약초 레시피를 따른 후 에너지가 완전히 달라졌어요."',
+  rv3_purchased: '매뉴얼',
+  rv4_name: 'Wei Zhang', rv4_loc: '호주',
+  rv4_text: '"5권 전부 구매했습니다. 3개월 만에 전반적인 건강이 눈에 띄게 좋아졌어요!"',
+  rv4_purchased: '전체 세트',
+  review_more: '더 많은 후기 ▸',
+  promo_text: '🔥 한정 오퍼 · 전권 50% 할인 · 2026년 6월 30일 종료',
+  about_title: 'Ancient Remedies 소개',
+  about_text: 'Ancient Remedies는 동양 문명의 심오한 양생 지혜를 보존하고 공유하는 데 전념합니다. 각 권은 고대 전통과 현대 웰니스를 잇는 다리입니다.',
+  disclaimer: '면책 조항: 이 서적은 교육 및 참고 목적으로만 제공됩니다. 의학적 조언을 구성하지 않습니다. 건강 계획 시작 전 전문가와 상담하세요.',
+  copyright: '© 2026 Ancient Remedies. All rights reserved.',
+  pay_title: '스캔하여 결제', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. 휴대폰에서 WeChat 또는 Alipay 열기<br>2. 위에 표시된 QR 코드 스캔<br>3. 표시된 결제 금액 입력<br>4. 확인하고 결제 완료',
+  pay_back: '쇼핑 계속하기',
+  ai_title: '양생 신탁', ai_send: '전송',
+  ai_welcome: '안녕하세요! 저는 양생 신탁입니다. 증상이나 건강 요구사항을 알려주시면 적합한 책을 추천해 드리겠습니다.',
+  ai_placeholder: '증상이나 건강 요구사항을 입력하세요...',
+  remove: '삭제',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+de: {
+  brand: 'Ancient Remedies',
+  nav_home: 'Start', nav_products: 'Sammlung', nav_reviews: 'Bewertungen', nav_about: 'Über uns',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: 'Östliche Wellness-Weisheit · Tausendjähriges Erbe',
+  hero_desc: 'Entdecken Sie die über Jahrtausende überlieferten Heilgeheimnisse. Von antiken Rezepten bis hin zu saisonalen Wellness-Routinen im Einklang mit dem Rhythmus der Natur.',
+  hero_cta1: 'Sammlung erkunden', hero_cta2: 'Das Orakel fragen',
+  products_title: 'Die Sammlung',
+  products_desc: 'Fünf Bände östlicher Wellness-Weisheit, jeder ein Tor zu alten Heiltraditionen.',
+  pf_name: 'Volksheilmittel-Kompendium', pf_sub: '偏方大全',
+  pf_desc: '59 bewährte Formeln für 8 Körpersysteme mit Quellenangaben und modernen Anwendungshinweisen.',
+  pf_tag1: '59 Formeln', pf_tag2: '8 Systeme', pf_tag3: 'Mit Quellen',
+  ll_name: 'Haus-Therapie-Guide', ll_sub: '理療指南',
+  ll_desc: '52 therapeutische Bewegungen, 35 Akupunkturpunkte, 6 Körperbereiche mit Schritt-für-Schritt-Illustrationen.',
+  ll_tag1: '52 Bewegungen', ll_tag2: '35 Akupunkte', ll_tag3: '6 Bereiche',
+  ys_name: 'Wellness-Handbuch', ys_sub: '養生手册',
+  ys_desc: '108 saisonale Rezepte für 9 Konstitutionstypen mit personalisierten Wellness-Plänen für jede Jahreszeit.',
+  ys_tag1: '108 Rezepte', ys_tag2: '9 Typen', ys_tag3: 'Jahreszeiten',
+  hd_name: 'Huangdi Neijing · Saisonale Wellness', hd_sub: '黃帝內經',
+  hd_desc: '24 solare Termine basierend auf Fünf-Elemente-Theorie und Meridian-Uhr — die Krone der TCM-Weisheit.',
+  hd_tag1: '24 Solartermine', hd_tag2: 'Fünf Elemente', hd_tag3: 'Meridian-Uhr',
+  bc_name: 'Bencao Gangmu · Diätetik', bc_sub: '本草綱目',
+  bc_desc: '365 Inhaltsstoffe, 200+ Rezepte, konstitutionsbasierte Ernährungstherapie und personalisierte Heilung.',
+  bc_tag1: '365 Stoffe', bc_tag2: '200+ Rezepte', bc_tag3: 'Konstitution',
+  badge_hot: 'BELIEBT', badge_rec: 'EMPFOHLEN', badge_treasure: 'SCHATZ', badge_classic: 'KLASSIK', badge_herbal: 'KRÄUTER',
+  sale_50: '50% OFF', sale_limited: 'BEGRENZT', sale_days_left: 'Bald vorbei',
+  add_cart: 'In den Warenkorb', cart_label: 'Warenkorb', cart_title: 'Warenkorb 🛒',
+  cart_empty: 'Ihr Warenkorb ist leer! Erkunden Sie unsere Sammlung für Ihre Wellness-Reise!',
+  cart_total: 'Gesamt', checkout: 'Zur Kasse ♦',
+  reviews_title: 'Bewertungen',
+  reviews_desc: 'Stimmen aus aller Welt, die die Weisheit des alten Heilens erlebt haben.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12.847 Globale Bewertungen', stat_recommend: 'Empfehlen',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'USA',
+  rv1_text: '"Ingwer-Zucker-Zwiebelsuppe heilte meine Erkältung in 2 Tagen. Oma wäre so stolz — ihre Heilmittel funktionieren wirklich!"',
+  rv1_purchased: 'Kompendium',
+  rv2_name: 'Wang Fang', rv2_loc: 'Kanada',
+  rv2_text: '"Die Akupunktkarten im Therapie-Guide sind unglaublich praktisch! Ich verwende sie jeden Morgen."',
+  rv2_purchased: 'Guide',
+  rv3_name: 'David Chen', rv3_loc: 'UK',
+  rv3_text: '"Der Konstitutionstest zeigte Qi-Mangel. 3 Monate Kräuterrezepte später — meine Energiewerte haben sich komplett transformiert."',
+  rv3_purchased: 'Handbuch',
+  rv4_name: 'Wei Zhang', rv4_loc: 'Australien',
+  rv4_text: '"Alle fünf Bände gekauft. Meine allgemeine Gesundheit hat sich in nur 3 Monaten deutlich verbessert!"',
+  rv4_purchased: 'Komplett-Set',
+  review_more: 'Mehr Bewertungen ▸',
+  promo_text: '🔥 Sonderangebot · 50% auf alle Bände · Bis 30. Juni 2026',
+  about_title: 'Über Ancient Remedies',
+  about_text: 'Ancient Remedies widmet sich der Bewahrung und Weitergabe der tiefen Wellness-Weisheit der östlichen Zivilisation. Jeder Band ist eine Brücke zwischen alter Tradition und zeitgenössischem Wohlbefinden.',
+  disclaimer: 'Haftungsausschluss: Diese Bücher dienen ausschließlich Bildungs- und Referenzzwecken. Sie stellen keine medizinische Beratung dar. Bitte konsultieren Sie einen qualifizierten Arzt.',
+  copyright: '© 2026 Ancient Remedies. Alle Rechte vorbehalten.',
+  pay_title: 'Zum Bezahlen scannen', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. Öffnen Sie WeChat oder Alipay<br>2. Scannen Sie den obigen QR-Code<br>3. Geben Sie den angezeigten Betrag ein<br>4. Bestätigen und schließen Sie die Zahlung ab',
+  pay_back: 'Weiter einkaufen',
+  ai_title: 'Wellness-Orakel', ai_send: 'Senden',
+  ai_welcome: 'Hallo! Ich bin das Wellness-Orakel. Beschreiben Sie Ihre Symptome und ich empfehle das passende Buch für Ihre Heilungsreise.',
+  ai_placeholder: 'Beschreiben Sie Ihre Symptome...',
+  remove: 'Entfernen',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+fr: {
+  brand: 'Ancient Remedies',
+  nav_home: 'Accueil', nav_products: 'Collection', nav_reviews: 'Témoignages', nav_about: 'À propos',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: 'Sagesse du bien-être oriental · Héritage millénaire',
+  hero_desc: 'Découvrez les secrets de guérison transmis au fil des millénaires. Des remèdes populaires anciens aux routines saisonnières alignées sur le rythme de la nature.',
+  hero_cta1: 'Explorer la collection', hero_cta2: 'Consulter l\'Oracle',
+  products_title: 'La Collection',
+  products_desc: 'Cinq volumes de sagesse orientale du bien-être, chacun une porte vers les traditions de guérison anciennes.',
+  pf_name: 'Compendium de remèdes populaires', pf_sub: '偏方大全',
+  pf_desc: '59 formules éprouvées pour 8 systèmes corporels, avec citations originales et notes d\'utilisation modernes.',
+  pf_tag1: '59 Formules', pf_tag2: '8 Systèmes', pf_tag3: 'Avec sources',
+  ll_name: 'Guide de thérapie à domicile', ll_sub: '理療指南',
+  ll_desc: '52 mouvements thérapeutiques, 35 points d\'acupuncture, 6 zones corporelles avec illustrations étape par étape.',
+  ll_tag1: '52 Mouvements', ll_tag2: '35 Acupoints', ll_tag3: '6 Zones',
+  ys_name: 'Manuel de bien-être', ys_sub: '養生手册',
+  ys_desc: '108 recettes saisonnières pour 9 types de constitution, avec des plans de bien-être personnalisés pour chaque saison.',
+  ys_tag1: '108 Recettes', ys_tag2: '9 Types', ys_tag3: 'Plans saisonniers',
+  hd_name: 'Huangdi Neijing · Bien-être saisonnier', hd_sub: '黃帝內經',
+  hd_desc: 'Guide des 24 termes solaires basé sur la théorie des Cinq Éléments et l\'Horloge des Méridiens — le joyau de la sagesse TCM.',
+  hd_tag1: '24 Termes solaires', hd_tag2: 'Cinq Éléments', hd_tag3: 'Horloge Méridienne',
+  bc_name: 'Bencao Gangmu · Diététique', bc_sub: '本草綱目',
+  bc_desc: '365 ingrédients médicinaux, 200+ recettes thérapeutiques, correspondance par type de constitution pour une guérison diététique personnalisée.',
+  bc_tag1: '365 Ingrédients', bc_tag2: '200+ Recettes', bc_tag3: 'Constitution',
+  badge_hot: 'POPULAIRE', badge_rec: 'RECOMMANDÉ', badge_treasure: 'TRÉSOR', badge_classic: 'CLASSIQUE', badge_herbal: 'HERBAL',
+  sale_50: '50% OFF', sale_limited: 'LIMITÉ', sale_days_left: 'Bientôt terminé',
+  add_cart: 'Ajouter au panier', cart_label: 'Panier', cart_title: 'Panier 🛒',
+  cart_empty: 'Votre panier est vide ! Explorez notre collection pour commencer votre voyage vers le bien-être !',
+  cart_total: 'Total', checkout: 'Payer ♦',
+  reviews_title: 'Témoignages',
+  reviews_desc: 'Voix du monde entier qui ont expérimenté la sagesse de la guérison ancienne.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12 847 avis mondiaux', stat_recommend: 'Recommandent',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'États-Unis',
+  rv1_text: '"La soupe gingembre-sucre-oignon m\'a guéri en 2 jours. Grand-mère serait fière — ses remèdes fonctionnent vraiment !"',
+  rv1_purchased: 'Compendium',
+  rv2_name: 'Wang Fang', rv2_loc: 'Canada',
+  rv2_text: '"Les cartes d\'acupuncture du Guide sont incroyablement pratiques ! Je les utilise chaque matin dans ma routine."',
+  rv2_purchased: 'Guide',
+  rv3_name: 'David Chen', rv3_loc: 'Royaume-Uni',
+  rv3_text: '"Le test de constitution a montré un déficit de Qi. 3 mois de recettes herbales plus tard — mon énergie s\'est complètement transformée."',
+  rv3_purchased: 'Manuel',
+  rv4_name: 'Wei Zhang', rv4_loc: 'Australie',
+  rv4_text: '"Acheté les cinq volumes. Ma santé générale s\'est nettement améliorée en seulement 3 mois !"',
+  rv4_purchased: 'Set complet',
+  review_more: 'Plus d\'avis ▸',
+  promo_text: '🔥 Offre limitée · 50% sur tous les volumes · Jusqu\'au 30 juin 2026',
+  about_title: 'À propos d\'Ancient Remedies',
+  about_text: 'Ancient Remedies est dédié à la préservation de la sagesse du bien-être de la civilisation orientale. Chaque volume est un pont entre la tradition ancienne et le bien-être contemporain.',
+  disclaimer: 'Avertissement : Ces livres sont fournis à des fins éducatives et de référence uniquement. Ils ne constituent pas un avis médical. Consultez un professionnel de santé qualifié.',
+  copyright: '© 2026 Ancient Remedies. Tous droits réservés.',
+  pay_title: 'Scanner pour payer', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. Ouvrez WeChat ou Alipay<br>2. Scannez le QR code ci-dessus<br>3. Entrez le montant affiché<br>4. Confirmez et finalisez le paiement',
+  pay_back: 'Continuer les achats',
+  ai_title: 'Oracle du bien-être', ai_send: 'Envoyer',
+  ai_welcome: 'Bonjour ! Je suis l\'Oracle du bien-être. Décrivez vos symptômes et je recommanderai le volume adapté à votre parcours de guérison.',
+  ai_placeholder: 'Décrivez vos symptômes...',
+  remove: 'Supprimer',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+},
+ar: {
+  brand: 'الطب القديم',
+  nav_home: 'الرئيسية', nav_products: 'المجموعة', nav_reviews: 'التقييمات', nav_about: 'عن',
+  hero_title: 'Ancient Remedies',
+  hero_subtitle: 'حكمة الصحة الشرقية · تراث ألف عام',
+  hero_desc: 'اكتشف أسرار الشفاء الموروثة عبر آلاف السنين. من الوصفات الشعبية المسجلة في النصوص القديمة إلى روتينات الصحة الموسمية المتوافقة مع إيقاع الطبيعة — رحلتك نحو الصحة الشاملة تبدأ هنا.',
+  hero_cta1: 'استكشف المجموعة', hero_cta2: 'اسأل العرّاف',
+  products_title: 'المجموعة',
+  products_desc: 'خمسة مجلدات من حكمة الصحة الشرقية، كل منها بوابة لتقاليد الشفاء القديمة.',
+  pf_name: 'موسوعة العلاجات الشعبية', pf_sub: '偏方大全',
+  pf_desc: '59 وصفة مجربة عبر 8 أجهزة جسدية مع الاستشهادات الأصلية وملاحظات الاستخدام الحديث. كنز من حكمة الأجداد.',
+  pf_tag1: '59 وصفة', pf_tag2: '8 أجهزة', pf_tag3: 'مع المصادر',
+  ll_name: 'دليل العلاج المنزلي', ll_sub: '理療指南',
+  ll_desc: '52 حركة علاجية، 35 خريطة لنقاط الإبر، تغطي 6 مناطق جسدية رئيسية مع رسومات توضيحية خطوة بخطوة.',
+  ll_tag1: '52 حركة', ll_tag2: '35 نقطة', ll_tag3: '6 مناطق',
+  ys_name: 'دليل الصحة الشامل', ys_sub: '養生手册',
+  ys_desc: '108 وصفة موسمية لـ 9 أنواع من التركيبات الجسدية مع خطط صحة شخصية لكل موسم.',
+  ys_tag1: '108 وصفات', ys_tag2: '9 أنواع', ys_tag3: 'خطط موسمية',
+  hd_name: 'هوانغدي نيجينغ · الصحة الموسمية', hd_sub: '黃帝內經',
+  hd_desc: 'دليل 24 مصطلحًا شمسيًا مبنيًا على نظرية العناصر الخمسة وساعة القنوات — جوهرة حكمة الطب الصيني التقليدي.',
+  hd_tag1: '24 مصطلح شمسي', hd_tag2: 'العناصر الخمسة', hd_tag3: 'ساعة القنوات',
+  bc_name: 'بنتساو غانغمو · العلاج الغذائي', bc_sub: '本草綱目',
+  bc_desc: '365 مكون طبي، أكثر من 200 وصفة علاجية، مطابقة حسب نوع التركيب الجسدي للعلاج الغذائي الشخصي.',
+  bc_tag1: '365 مكون', bc_tag2: '200+ وصفة', bc_tag3: 'مطابقة التركيب',
+  badge_hot: 'رائج', badge_rec: 'موصى به', badge_treasure: 'كنز', badge_classic: 'كلاسيكي', badge_herbal: 'أعشاب',
+  sale_50: '50% خصم', sale_limited: 'محدود', sale_days_left: 'ينتهي قريبًا',
+  add_cart: 'أضف للسلة', cart_label: 'السلة', cart_title: 'السلة 🛒',
+  cart_empty: 'سلتك فارغة! استكشف مجموعتنا لبدء رحلتك نحو الصحة والعافية!',
+  cart_total: 'المجموع', checkout: 'الدفع ♦',
+  reviews_title: 'التقييمات',
+  reviews_desc: 'أصوات من جميع أنحاء العالم ممن اختبروا حكمة الشفاء القديمة.',
+  stat_rating: '⭐ 4.8/5.0', stat_reviewers: '12,847 تقييم عالمي', stat_recommend: 'يوصون',
+  rv1_name: 'Li Mingyuan', rv1_loc: 'أمريكا',
+  rv1_text: '"شوربة الزنجبيل والسكر والبصل شفتني خلال يومين. جدتي ستكون فخورة — علاجاتها فعلاً تعمل!"',
+  rv1_purchased: 'الموسوعة',
+  rv2_name: 'Wang Fang', rv2_loc: 'كندا',
+  rv2_text: '"خرائط الوخز في دليل العلاج عملية للغاية! أستخدمها كل صباح كجزء من روتيني."',
+  rv2_purchased: 'الدليل',
+  rv3_name: 'David Chen', rv3_loc: 'بريطانيا',
+  rv3_text: '"اختبار التركيب أظهر نقص الطاقة. اتبعت وصفات الأعشاب لمدة 3 أشهر ومستويات الطاقة تحولت تمامًا."',
+  rv3_purchased: 'الدليل الصحي',
+  rv4_name: 'Wei Zhang', rv4_loc: 'أستراليا',
+  rv4_text: '"اشتريت المجلدات الخمسة جميعًا. صحتي الإجمالية تحسنت بشكل ملحوظ في 3 أشهر فقط!"',
+  rv4_purchased: 'المجموعة الكاملة',
+  review_more: 'المزيد من التقييمات ▸',
+  promo_text: '🔥 عرض محدود · 50% خصم على جميع المجلدات · ينتهي 30 يونيو 2026',
+  about_title: 'عن الطب القديم',
+  about_text: 'Ancient Remedies مكرس للحفاظ على حكمة الصحة العميقة للحضارة الشرقية ومشاركتها. كل مجلد هو جسر بين التقاليد القديمة والصحة المعاصرة.',
+  disclaimer: 'إخلاء مسؤولية: هذه الكتب لأغراض تعليمية ومرجعية فقط. لا تشكل نصيحة طبية. يرجى استشارة أخصائي رعاية صحية مؤهل قبل بدء أي نظام صحي.',
+  copyright: '© 2026 Ancient Remedies. جميع الحقوق محفوظة.',
+  pay_title: 'امسح للدفع', pay_wechat: 'WeChat Pay', pay_alipay: 'Alipay',
+  pay_tip: '1. افتح WeChat أو Alipay على هاتفك<br>2. امسح رمز QR المعروض أعلاه<br>3. أدخل مبلغ الدفع المعروض<br>4. أكد وأكمل الدفع',
+  pay_back: 'متابعة التسوق',
+  ai_title: 'عرّاف الصحة', ai_send: 'إرسال',
+  ai_welcome: 'مرحبًا! أنا عرّاف الصحة. صف أعراضك أو احتياجاتك الصحية وسأوصي بالمجلد المناسب لرحلة شفائك.',
+  ai_placeholder: 'صف أعراضك أو احتياجاتك الصحية...',
+  remove: 'حذف',
+  label_pianfang: '方', label_liliao: '理', label_yangsheng: '养', label_huangdi: '黄', label_bencao: '草'
+}
+};
+
+// ===================== STATE =====================
+var currentLang = 'en';
+var cart = [];
+
+// ===================== TRANSLATE =====================
+function t(key) {
+  return (T[currentLang] && T[currentLang][key]) || (T['en'] && T['en'][key]) || key;
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  var isAr = lang === 'ar';
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isAr ? 'rtl' : '';
+  document.body.dir = isAr ? 'rtl' : '';
+
+  var langs = ['en', 'zh', 'ja', 'ko', 'de', 'fr', 'ar'];
+  document.querySelectorAll('.lang-btn').forEach(function(btn, i) {
+    btn.classList.toggle('active', langs[i] === lang);
+  });
+
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    el.innerHTML = t(el.getAttribute('data-i18n'));
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
+  });
+
+  renderProducts();
+  renderReviews();
+  renderCart();
+}
+
+// ===================== RENDER PRODUCTS =====================
+function renderProducts() {
+  var grid = document.getElementById('productsGrid');
+  var html = '';
+  products.forEach(function(p) {
+    html += '<div class="product-card" style="--card-color:' + p.color + '">'
+      + '<span class="card-tag ' + p.tagClass + '">' + p.tag + '</span>'
+      + '<span class="card-badge">' + t(p.badge) + '</span>'
+      + '<div class="card-icon">' + p.icon + '</div>'
+      + '<h3>' + t(p.keys.name) + '</h3>'
+      + '<div class="sub">' + t(p.keys.sub) + '</div>'
+      + '<div class="desc">' + t(p.keys.desc) + '</div>'
+      + '<div class="card-tags"><span>' + t(p.keys.tag1) + '</span><span>' + t(p.keys.tag2) + '</span><span>' + t(p.keys.tag3) + '</span></div>'
+      + '<div class="price-row"><span class="current">$' + p.price + '</span><span class="old">$' + p.oldPrice + '</span></div>'
+      + '<button class="add-cart-btn" onclick="addToCart(\'' + p.id + '\')">' + t('add_cart') + '</button>'
+      + '</div>';
+  });
+  grid.innerHTML = html;
+}
+
+// ===================== RENDER REVIEWS =====================
+function renderReviews() {
+  var grid = document.getElementById('reviewsGrid');
+  var stars = '★★★★☆';
+  var html = '';
+  for (var i = 1; i <= 4; i++) {
+    html += '<div class="review-card">'
+      + '<div class="stars">' + stars + '</div>'
+      + '<div class="name">' + t('rv' + i + '_name') + '</div>'
+      + '<div class="loc">' + t('rv' + i + '_loc') + '</div>'
+      + '<div class="text">' + t('rv' + i + '_text') + '</div>'
+      + '<div class="purchased">' + t('rv' + i + '_purchased') + '</div>'
+      + '</div>';
+  }
+  grid.innerHTML = html;
+}
+
+// ===================== CART SYSTEM =====================
+function addToCart(id) {
+  var existing = cart.find(function(x) { return x.id === id; });
+  if (existing) {
+    existing.qty++;
+  } else {
+    cart.push({ id: id, qty: 1 });
+  }
+  updateBadge();
+  renderCart();
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(function(x) { return x.id !== id; });
+  updateBadge();
+  renderCart();
+}
+
+function changeQty(id, delta) {
+  var item = cart.find(function(x) { return x.id === id; });
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) { removeFromCart(id); return; }
+  updateBadge();
+  renderCart();
+}
+
+function updateBadge() {
+  var total = cart.reduce(function(s, x) { return s + x.qty; }, 0);
+  var badge = document.getElementById('cartBadge');
+  badge.textContent = total;
+  badge.style.display = total > 0 ? 'block' : 'none';
+}
+
+function renderCart() {
+  var container = document.getElementById('cartItems');
+  var emptyEl = document.getElementById('cartEmpty');
+  var footer = document.getElementById('cartFooter');
+  if (cart.length === 0) {
+    container.innerHTML = '';
+    emptyEl.style.display = 'block';
+    footer.style.display = 'none';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  footer.style.display = 'flex';
+  var html = '';
+  var total = 0;
+  cart.forEach(function(item) {
+    var p = products.find(function(x) { return x.id === item.id; });
+    var subtotal = p.price * item.qty;
+    total += subtotal;
+    html += '<div class="cart-item">'
+      + '<div class="color-bar" style="background:' + p.color + '"></div>'
+      + '<div class="item-icon">' + p.icon + '</div>'
+      + '<div class="item-info">'
+      + '<div class="item-name">' + t(p.keys.name) + ' <span class="mini-tag" style="background:' + p.color + '">' + p.tag + '</span></div>'
+      + '<div class="item-price">$' + p.price + ' &times; ' + item.qty + ' = $' + subtotal.toFixed(1) + '</div>'
+      + '</div>'
+      + '<div class="qty-control">'
+      + '<button onclick="changeQty(\'' + item.id + '\',-1)">−</button>'
+      + '<span>' + item.qty + '</span>'
+      + '<button onclick="changeQty(\'' + item.id + '\',1)">+</button>'
+      + '</div>'
+      + '<span class="del-btn" onclick="removeFromCart(\'' + item.id + '\')">✕</span>'
+      + '</div>';
+  });
+  container.innerHTML = html;
+  document.getElementById('cartTotalPrice').textContent = total.toFixed(1);
+}
+
+function toggleCart() { document.getElementById('cartOverlay').classList.toggle('open'); }
+function closeCart() { document.getElementById('cartOverlay').classList.remove('open'); }
+
+// ===================== PAYMENT =====================
+function openPayment() {
+  var total = cart.reduce(function(s, x) {
+    var p = products.find(function(pp) { return pp.id === x.id; });
+    return s + p.price * x.qty;
+  }, 0);
+  document.getElementById('payAmount').textContent = total.toFixed(1);
+  document.getElementById('cartOverlay').classList.remove('open');
+  document.getElementById('payOverlay').classList.add('open');
+  switchPay('wechat');
+}
+
+function closePayment() { document.getElementById('payOverlay').classList.remove('open'); }
+
+function switchPay(type) {
+  var tabs = document.querySelectorAll('.pay-tab');
+  tabs[0].classList.toggle('active', type === 'wechat');
+  tabs[1].classList.toggle('active', type === 'alipay');
+  document.getElementById('payQR').innerHTML = type === 'wechat'
+    ? '<img src="img/wechat-qr.png" alt="WeChat Pay QR Code">'
+    : '<img src="img/alipay-qr.jpg" alt="Alipay QR Code">';
+}
+
+// ===================== PROMO BANNER =====================
+function closePromo() {
+  document.getElementById('promoBanner').style.display = 'none';
+  try { localStorage.setItem('promo_closed', '1'); } catch(e) {}
+}
+(function() {
+  try {
+    if (localStorage.getItem('promo_closed') === '1') {
+      document.getElementById('promoBanner').style.display = 'none';
+    }
+  } catch(e) {}
+})();
+
+// ===================== AI ASSISTANT =====================
+function toggleAI() { document.getElementById('aiPanel').classList.toggle('open'); }
+function openAI() { document.getElementById('aiPanel').classList.add('open'); }
+
+function sendAI() {
+  var input = document.getElementById('aiInput');
+  var msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  var msgArea = document.getElementById('aiMessages');
+  msgArea.innerHTML += '<div class="ai-msg user">' + msg.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+  var lower = msg.toLowerCase();
+  var reply = '';
+  if (lower.match(/cold|cough|flu|fever|runny|sore throat/)) {
+    reply = 'Based on your respiratory symptoms, I highly recommend the <b>Folk Remedies Compendium</b> — it contains 59 proven formulas for colds, coughs, and flu, including the famous Ginger-Sugar-Onion soup that has helped thousands!';
+  } else if (lower.match(/neck|shoulder|back|pain|joint|muscle|stiff/)) {
+    reply = 'For musculoskeletal concerns, the <b>Home Therapy Guide</b> is your best choice — it covers 52 therapeutic movements and 35 acupoint targeting techniques for pain relief and flexibility.';
+  } else if (lower.match(/stomach|digestion|appetite|digest|nausea|bloat|indigestion/)) {
+    reply = 'Digestive issues? The <b>Folk Remedies Compendium</b> has excellent herbal formulas for stomach ailments. Also check the <b>Bencao Gangmu</b> for dietary therapy approaches to gut health!';
+  } else if (lower.match(/eczema|skin|rash|acne|itch|dermatitis|allergy/)) {
+    reply = 'Skin conditions are well-covered in the <b>Folk Remedies Compendium</b> with traditional herbal applications. The <b>Wellness Manual</b> also addresses skin health through seasonal dietary adjustments.';
+  } else if (lower.match(/pressure|blood|hypertension|heart|cardio|cholesterol/)) {
+    reply = 'For cardiovascular and blood pressure concerns, the <b>Folk Remedies Compendium</b> offers several time-tested herbal formulations and lifestyle adjustments that have been used for centuries.';
+  } else if (lower.match(/constitution|body type|体质|qi|deficiency/)) {
+    reply = 'To understand your unique constitution, the <b>Wellness Manual</b> provides a comprehensive 9-type system with personalized seasonal recipes and lifestyle recommendations for each type.';
+  } else if (lower.match(/insomnia|sleep|tired|energy|fatigue|exhaust|rest/)) {
+    reply = 'Sleep and energy issues? The <b>Folk Remedies Compendium</b> has calming herbal formulas. The <b>Huangdi Neijing</b> also explains the Meridian Clock for optimal sleep timing according to TCM theory.';
+  } else if (lower.match(/season|solar|节气|summer|winter|spring|autumn|autumn/)) {
+    reply = 'The <b>Huangdi Neijing · Seasonal Wellness</b> is perfect for you! It maps all 24 solar terms to specific wellness practices using Five Elements theory — living in harmony with nature\'s rhythm.';
+  } else if (lower.match(/herb|food|diet|recipe|eat|nutrition|meal/)) {
+    reply = 'For dietary healing and nutrition therapy, the <b>Bencao Gangmu · Dietary Therapy</b> covers 365 medicinal ingredients and 200+ therapeutic recipes, matched to your specific constitution type!';
+  } else if (lower.match(/acupoint|meridian|massage|acupuncture|经络/)) {
+    reply = 'The <b>Home Therapy Guide</b> is ideal — it includes 35 key acupoint maps with precise locations and 52 therapeutic movements you can practice at home for self-care.';
+  } else {
+    reply = 'Please describe your specific symptoms or health concerns in more detail — such as whether it relates to sleep, digestion, pain, skin, energy, or general wellness — and I\'ll recommend the most suitable volume from our collection.';
+  }
+  setTimeout(function() {
+    msgArea.innerHTML += '<div class="ai-msg bot">' + reply + '</div>';
+    msgArea.scrollTop = msgArea.scrollHeight;
+  }, 500);
+  msgArea.scrollTop = msgArea.scrollHeight;
+}
+
+// ===================== KEYBOARD SHORTCUTS =====================
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeCart();
+    closePayment();
+    document.getElementById('aiPanel').classList.remove('open');
+  }
+});
+
+// ===================== INITIALIZE =====================
+renderProducts();
+renderReviews();
+renderCart();
+</script>
+<!-- 51La Statistics -->
+<script charset="UTF-8" id="LA-DATA-WIDGET" crossorigin="anonymous" src="https://v6-widget.51.la/v6/19708094.js"></script>
+</body>
+</html>
